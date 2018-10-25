@@ -1,3 +1,7 @@
+
+<!doctype html>
+<html lang="fr">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -15,38 +19,39 @@
 
 <body>
 
-  <header id="home" class="container-fluid">
-    <img src="./assets/img/logoLacVert.png" class="header_logo" alt="logo le lac vert">
+<header id="home" class="container-fluid">
+  <img src="./assets/img/logoLacVert.png" class="header_logo" alt="logo le lac vert">
+  <nav class="container">
+    <div class="link">
+      <a href="index.html">Accueil</a>
+    </div>
 
-    <nav class="container">
-      <div class="link">
-        <a href="">Accueil</a>
+    <div class="link">
+      <a href="activites.html">Activit&eacute;s</a>
+      <div class="nav_up">
+        <a href="activite-accrobranche.html"><i class="fas fa-chevron-right"></i>Accrobranche</a>
+        <a href="activite-escalade.html"><i class="fas fa-chevron-right"></i>Escalade</a>
+        <a href="activite-ferme-pedagogique.html"><i class="fas fa-chevron-right"></i>Ferme pédagogique</a>
+        <a href="activite-pedalo.html"><i class="fas fa-chevron-right"></i>Pédalo</a>
       </div>
-      <div class="link">
-        <a href="">Liste d'activité</a>
-        <div class="nav_up">
-          <a href=""><i class="fas fa-chevron-right"></i>Accrobranche</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Escalade</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Ferme pédagogique</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Pédalo</a>
-        </div>
+    </div>
+    <div class="link">
+      <a href="gites.html">G&icirc;tes</a>
+      <div class="nav_up">
+        <a href="gite-babe.html"><i class="fas fa-chevron-right"></i>babe</a>
+        <a href="gite-garfield.html"><i class="fas fa-chevron-right"></i>Garfield</a>
+        <a href="gite-idefix.html"><i class="fas fa-chevron-right"></i>Idéfix</a>
+        <a href="gite-jolly-jumper.html"><i class="fas fa-chevron-right"></i>Jolly Jumper</a>
+        <a href="gite-saturnin.html"><i class="fas fa-chevron-right"></i>Saturnin</a>
+        <a href="gite-tornado.html"><i class="fas fa-chevron-right"></i>Tornado</a>
       </div>
-      <div class="link">
-        <a href="">Gîtes</a>
-        <div class="nav_up">
-          <a href=""><i class="fas fa-chevron-right"></i>babe</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Garfield</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Idéfix</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Jolly Jumper</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Saturnin</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Tornado</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="">Tarifs</a>
-      </div>
-    </nav>
-  </header>
+    </div>
+
+    <div class="link">
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
 <section id="main">
   <div class="container">
     <div class="jumbotron">
@@ -56,9 +61,9 @@
            srcset="./assets/img/samples/banner-375-white.png 375w, ./assets/img/samples/banner-white.png 1500w"
            alt="…" -->
       <picture>
-        <source srcset="./assets/img/samples/banner-xl-white.png" media="(min-width: 1200px)">
-        <source srcset="./assets/img/samples/banner-white.png" media="(min-width: 800px)">
-        <img srcset="./assets/img/samples/banner-375-white.png" alt="…">
+        <source srcset="./assets/img/banner.jpg" media="(min-width: 1200px)">
+        <source srcset="./assets/img/home-banner-tablet.jpg" media="(min-width: 768px)">
+        <img srcset="./assets/img/home-banner-mobile.jpg" alt="…">
       </picture>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid consequuntur debitis dicta fuga pariatur. Architecto deserunt dolore dolores fuga harum ipsum iusto placeat quam quas rem sequi, suscipit voluptatibus.</p>
     </div>
@@ -66,19 +71,19 @@
       <h2>Nos activit&eacute;s</h2>
       <div class="container">
         <div class="row">
-          <div class="col-sm activite-element">
-            Activite 1
+          <div class="col-sm activite-element activite-element-accrobranche">
+            <span>Accrobranche</span>
           </div>
-          <div class="col-sm activite-element">
-            Activite 2
+          <div class="col-sm activite-element activite-element-escalade">
+            <span>Escalade</span>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm activite-element">
-            Activite 3
+          <div class="col-sm activite-element activite-element-pedalo">
+            <span>P&eacute;dalo</span>
           </div>
-          <div class="col-sm activite-element">
-            Activite 4
+          <div class="col-sm activite-element activite-element-ferme">
+            <span>Ferme P&eacute;dagogique</span>
           </div>
         </div>
       </div>
@@ -87,6 +92,8 @@
   </div>
 </section>
 <div class="pre-footer">
+
+</html>
 
 </div>
 <footer>
@@ -101,3 +108,4 @@
 <script src="./assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
 </body>
 </html>
+

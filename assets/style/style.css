@@ -253,6 +253,40 @@ section#main .container section.activities-container h2 {
   padding: 10px;
   margin: 5px 10px;
 }
+.activite-element {
+  background-repeat:no-repeat;
+  font-size : 2.5em;
+  color:#fff;
+  text-shadow:1px 1px 5px rgba(0,0,0,1);
+  height:150px;
+  line-height:130px;
+  background-size: cover;
+}
+.activite-element span {
+  display: none;
+}
+
+.activite-element:hover span {
+  display: block;
+  width:100%;
+  background:rgba(255, 255, 255, 0.3);
+  text-align: center;
+  
+}
+
+.activite-element-accrobranche{
+  background-image: url("../img/banneracro.jpg") ;
+}
+.activite-element-escalade{
+  background-image: url("../img/bannerclimb.jpeg") ;
+}
+.activite-element-pedalo{
+  background-image: url("../img/bannerpedalo.png") ;
+}
+.activite-element-ferme{
+  background-image: url("../img/bannerferme.jpg") ;
+}
+
 
 .contact-element-container {
   margin: 5px auto;
