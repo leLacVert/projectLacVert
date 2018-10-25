@@ -1,0 +1,14 @@
+#gitePage {
+  .card{
+    text-align: center;
+    margin: 1rem .5rem;
+    .banner_img {
+      width: -webkit-fill-available;
+      height: fit-content;
+    }
+    .card_img {
+      width: auto;
+      height: 200px;
+    }
+  }
+}
