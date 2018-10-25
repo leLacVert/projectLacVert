@@ -13,7 +13,8 @@ body {
 h1, h2 {
   font-family: "Mali", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
+  padding-top: 1rem;
 }
 
 .container-fluid {
@@ -193,6 +194,14 @@ nav .link .nav_down a:hover {
     color: #76b38f;
   }
 }
+.bg-red {
+  background: #f00;
+}
+
+.bg-green {
+  background: #0f0;
+}
+
 section#main {
   padding: 5px;
   width: 100%;
@@ -201,12 +210,14 @@ section#main {
 
 section#main .container {
   width: 100%;
+  /*min-height:550px;*/
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
 section#main .container .jumbotron {
   background: #C3CDBA;
+  /*height:200px;*/
   width: 100%;
   margin-bottom: 30px;
   padding: 10px;
@@ -221,10 +232,13 @@ section#main .container .jumbotron img {
 section#main .container section.activities-container {
   border-radius: 4px;
   background: #C3CDBA;
+  /*818B7D ;*/
+  /*height:500px;*/
   width: 100%;
 }
 
 section#main .container section.activities-container h2 {
+  /*text-indent: 10px;*/
   padding: 10px;
   background: #fff;
   width: 100%;
@@ -269,27 +283,6 @@ section#main .container section.activities-container h2 {
 .text-muted {
   color: #0286E7 !important;
   /* #14bc03 */
-}
-.mentions-container{
-  padding:25px !important;
-
-}
-.mentions-container h1{
-   font-size:2em;
-  width:100%;
-  text-align: center;
- }
-.mentions-container h2{
-  font-size:1.3em;
-}
-.mentions-container h3{
-  font-size:1.2em;
-}
-.mentions-container pre{
-  width:100%;
-}
-.mentions-container p{
-color:#333;
 }
 
 /****** Smartphones M ******/
@@ -360,17 +353,32 @@ color:#333;
     height: 70px;
   }
 }
+#gitePage {
+  background: #808285;
+  padding-top: 1rem;
+}
 #gitePage .card {
   text-align: center;
   margin: 1rem 0.5rem;
-}
-#gitePage .card .banner_img {
-  width: -webkit-fill-available;
-  height: fit-content;
+  border: 1px solid #666;
 }
 #gitePage .card .card_img {
   width: auto;
   height: 200px;
+}
+#gitePage .card .card_button {
+  display: flex;
+  margin: 1rem auto;
+}
+#gitePage .card .card_button .btn {
+  margin: auto;
+}
+#gitePage .card p {
+  text-align: left;
+}
+#gitePage .card_small {
+  position: relative;
+  height: 650px;
 }
 
 /*# sourceMappingURL=style.css.map */
