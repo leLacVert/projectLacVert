@@ -7,60 +7,72 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./assets/vendor/bootstrap_min/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=K2D|Mali" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/style.css">
 
-  <title>Le lac vert</title>
+  <title>Le Lac Vert</title>
 </head>
-
 <body>
+<header>
+  <div id="logo">
+    <img src="./assets/img/logoLacVert.png" alt="logo">
+  </div>
+</header>
+<nav>
 
-  <header id="home" class="container-fluid">
-    <img src="./assets/img/logoLacVert.png" class="header_logo" alt="logo le lac vert">
+</nav>
+<section id="main">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Le Lac Vert, Gites et Activit&eacute;s en plein nature.</h1>
 
-    <nav class="container">
-      <div class="link">
-        <a href="">Accueil</a>
-      </div>
-      <div class="link">
-        <a href="">Liste d'activité</a>
-        <div class="nav_up">
-          <a href=""><i class="fas fa-chevron-right"></i>Accrobranche</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Escalade</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Ferme pédagogique</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Pédalo</a>
+      <!--img sizes="(min-width: 400px) 80vw, 100vw"
+           srcset="./assets/img/samples/banner-375-white.png 375w, ./assets/img/samples/banner-white.png 1500w"
+           alt="…" -->
+      <picture>
+        <source srcset="./assets/img/samples/banner-xl-white.png" media="(min-width: 1200px)">
+        <source srcset="./assets/img/samples/banner-white.png" media="(min-width: 800px)">
+        <img srcset="./assets/img/samples/banner-375-white.png" alt="…">
+      </picture>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid consequuntur debitis dicta fuga pariatur. Architecto deserunt dolore dolores fuga harum ipsum iusto placeat quam quas rem sequi, suscipit voluptatibus.</p>
+    </div>
+    <section class="activities-container">
+      <h2>Nos activit&eacute;s</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm activite-element">
+            Activite 1
+          </div>
+          <div class="col-sm activite-element">
+            Activite 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm activite-element">
+            Activite 3
+          </div>
+          <div class="col-sm activite-element">
+            Activite 4
+          </div>
         </div>
       </div>
-      <div class="link">
-        <a href="">Gîtes</a>
-        <div class="nav_up">
-          <a href=""><i class="fas fa-chevron-right"></i>babe</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Garfield</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Idéfix</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Jolly Jumper</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Saturnin</a>
-          <a href=""><i class="fas fa-chevron-right"></i>Tornado</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="">Tarifs</a>
-      </div>
-    </nav>
-  </header>
 
-  <h1>Le lac vert</h1>
+    </section>
+  </div>
+</section>
+<div class="pre-footer">
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="./assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+</div>
+<footer>
+
+</footer>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
 </body>
-
 </html>
 
