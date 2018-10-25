@@ -1,14 +1,51 @@
 #gitePage {
-  .card{
+  background: $gris;
+  padding-top: 1rem;
+
+  .card {
     text-align: center;
     margin: 1rem .5rem;
-    .banner_img {
-      width: -webkit-fill-available;
-      height: fit-content;
-    }
+    border: 1px solid #666;
+
     .card_img {
       width: auto;
       height: 200px;
     }
+    .card_button {
+      display: flex;
+      margin: 1rem auto;
+      .btn {
+        margin: auto;
+      }
+    }
+
+    p {
+      text-align: left;
+    }
   }
+
+  .card_small {
+    position: relative;
+    height: 650px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #gitePage {}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #gitePage {}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #gitePage {}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #gitePage {}
 }
