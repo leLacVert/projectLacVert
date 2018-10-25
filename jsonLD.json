@@ -1,0 +1,36 @@
+<script type = "application/ld+json" > {
+    "@context": "http://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Le lac vert",
+    "image": "www.lelacvert.com/assets/img/lelacvert.jpg",
+    "@id": "",
+    "url": "www.lelacvert.com",
+    "telephone": "+33322446688",
+    "priceRange": "€€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue des carreaux",
+      "addressLocality": "Boulogne sur mer",
+      "postalCode": "62200",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.7254885,
+      "longitude": 1.6079219000000649
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  } 
+</script>
