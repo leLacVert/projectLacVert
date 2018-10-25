@@ -8,18 +8,6 @@ header, nav{
 }
 header #logo img{
   width : 50%;
-  /* background-image: url("../img/samples/banner-375-white.png");
-   background-image:
-           -webkit-image-set(
-                   "../img/samples/banner-375-white.png" 1x,
-                   "../img/samples/banner-white.png" 2x
-           );
-   background-image:
-           image-set(
-                   "../img/samples/banner-375-white.png" 1x,
-                   "../img/samples/banner-white.png" 2x
-           );
-           */
 }
 nav{
   background: #76B38F;
@@ -108,6 +96,27 @@ footer{
 
 .text-muted{
   color:#0286E7 !important; /* #14bc03 */
+}
+.mentions-container{
+  padding:25px !important;
+
+}
+.mentions-container h1{
+   font-size:2em;
+  width:100%;
+  text-align: center;
+ }
+.mentions-container h2{
+  font-size:1.3em;
+}
+.mentions-container h3{
+  font-size:1.2em;
+}
+.mentions-container pre{
+  width:100%;
+}
+.mentions-container p{
+color:#333;
 }
 
 /****** Smartphones M ******/
