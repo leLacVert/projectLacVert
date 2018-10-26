@@ -510,11 +510,11 @@ section#main .container section.activities-container h2 {
 .pg-r-3-2 {
   width: 100%;
   padding-bottom: 66.667%;
-  background-color: #ddd;
+ /* background-color: #ddd;*/
 }
 
 .pg-image-holder {
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -536,7 +536,10 @@ section#main .container section.activities-container h2 {
   width: 23%;
   /* valueur arbitraire */
   display: inline-block;
-  background-color: white;
+  /*background-color: white;*/
+}
+.pg-objet-wrap figure{
+  margin: 0 0 0;
 }
 
 .pg-galerie-objet {
@@ -558,7 +561,9 @@ section#main .container section.activities-container h2 {
   border: none;
   color: #ccc;
   background-color: transparent;
-  padding: 0.2em 1.5em;
+  padding: 0em 1.5em;
+  color: red;
+  font-size: x-large;
 }
 
 .pg-move-btn:first-child {
@@ -571,4 +576,7 @@ section#main .container section.activities-container h2 {
 
 .pg-move-btn.pg-right {
   cursor: e-resize;
+}
+.pg-detail-p{
+  border-bottom: 1px solid #999;
 }
