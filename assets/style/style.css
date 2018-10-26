@@ -32,7 +32,7 @@ h1, h2 {
     font-size: 1rem;
   }
 }
-@media (min-width: 768px) {activite-element-escalade
+@media (min-width: 768px) {
   h1 {
     font-size: 1.3rem;
   }
