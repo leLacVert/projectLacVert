@@ -195,7 +195,6 @@ nav .link .nav_down a:hover {
     color: #76b38f;
   }
 }
-
 section#main {
   padding: 5px;
   width: 100%;
@@ -277,6 +276,32 @@ section#main .container section.activities-container h2 {
 .text-muted {
   color: #0286E7 !important;
   /* #14bc03 */
+}
+
+.mentions-container {
+  padding: 25px !important;
+}
+
+.mentions-container h1 {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.mentions-container h2 {
+  font-size: 1.3em;
+}
+
+.mentions-container h3 {
+  font-size: 1.2em;
+}
+
+.mentions-container pre {
+  width: 100%;
+}
+
+.mentions-container p {
+  color: #333;
 }
 
 /****** Smartphones M ******/
@@ -409,6 +434,90 @@ section#main .container section.activities-container h2 {
   #gitePage .card_small {
     height: 650px;
   }
+}
+/********* Page description Gite ***********/
+/* .container {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+} */
+/* Classes utile */
+.pg-xy-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pg-transition {
+  transition: all 350ms ease-in-out;
+}
+
+.pg-r-3-2 {
+  width: 100%;
+  padding-bottom: 66.667%;
+  background-color: #ddd;
+}
+
+.pg-image-holder {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Styles principale */
+.pg-galerie-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.pg-galerie {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.pg-objet-wrap {
+  cursor: pointer;
+  width: 23%;
+  /* valueur arbitraire */
+  display: inline-block;
+  background-color: white;
+}
+
+.pg-galerie-objet {
+  opacity: 0.5;
+}
+
+.pg-galerie-objet.pg-active {
+  opacity: 1;
+}
+
+.pg-controle {
+  font-size: 0;
+  border-top: none;
+}
+
+.pg-move-btn {
+  display: inline-block;
+  width: 50%;
+  border: none;
+  color: #ccc;
+  background-color: transparent;
+  padding: 0.2em 1.5em;
+}
+
+.pg-move-btn:first-child {
+  border-right: none;
+}
+
+.pg-move-btn.pg-left {
+  cursor: w-resize;
+}
+
+.pg-move-btn.pg-right {
+  cursor: e-resize;
 }
 
 /*# sourceMappingURL=style.css.map */
