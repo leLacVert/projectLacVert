@@ -314,6 +314,7 @@ section#main .container section.activities-container h2 {
   /* #14bc03 */
 }
 
+
 .mentions-container {
   padding: 25px !important;
 
@@ -410,6 +411,14 @@ section#main .container section.activities-container h2 {
     height: 70px;
   }
 }
+
+
+#gitePage .card {
+  text-align: center;
+  margin: 1rem 0.5rem;
+}
+
+
 #gitePage {
   padding-top: 1rem;
 }
