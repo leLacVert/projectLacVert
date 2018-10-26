@@ -385,7 +385,6 @@ section#main .container section.activities-container h2 {
 .mentions-container p{
   color:#333;
 }
-=======
 
 .mentions-container {
   padding: 25px !important;
@@ -577,6 +576,7 @@ section#main .container section.activities-container h2 {
 #gitePage .card .banner_img {
   width: -webkit-fill-available;
   height: fit-content;
+}
 #gitePage {
   padding-top: 1rem;
 }
