@@ -96,8 +96,13 @@ nav .link a {
 nav .link a:hover {
   color: #000;
 }
+nav .link .link_click {
+  cursor: pointer;
+}
+nav .link .link_click:hover {
+  color: #000;
+}
 nav .link .nav_up {
-  position: relative;
   display: none;
 }
 nav .link .nav_down {
@@ -109,7 +114,7 @@ nav .link .nav_down {
   flex-direction: column;
 }
 nav .link .nav_down a {
-  background: #76b38f;
+  background: #A5D0B6;
   color: #333;
   text-decoration: none;
   line-height: 3rem;
@@ -123,7 +128,7 @@ nav .link .nav_down a i {
 }
 nav .link .nav_down a:hover {
   background: #333;
-  color: #76b38f;
+  color: #A5D0B6;
 }
 
 @media (min-width: 768px) {
@@ -173,26 +178,27 @@ nav .link .nav_down a:hover {
   nav .link .nav_down {
     position: absolute;
     top: 195px;
+    left: -50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: max-content;
-    transition: ease-in;
+    width: 15rem;
+    transition: top 1s ease-in;
   }
   nav .link .nav_down a {
     width: auto;
     text-decoration: none;
-    line-height: 3rem;
-    background: #76b38f;
+    line-height: 2.5rem;
+    background: #A5D0B6;
     border-bottom: 1px solid #808285;
   }
   nav .link .nav_down a i {
-    margin: auto 0.25rem;
+    margin: auto 0.75rem;
     font-size: 1rem;
   }
   nav .link .nav_down a:hover {
     background: #333;
-    color: #76b38f;
+    color: #A5D0B6;
   }
 }
 section#main {
@@ -379,16 +385,16 @@ section#main .container section.activities-container h2 {
   font-size: 2rem;
 }
 #gitePage .jumbotron {
-  background: #C3CDBA;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  display: contents;
 }
 #gitePage .jumbotron img {
+  margin-bottom: 1rem;
   width: 100%;
   border-radius: 0.3rem;
+  background-color: black;
 }
 #gitePage .jumbotron .button_banner {
+  display: none;
   margin: 1rem auto 0;
 }
 #gitePage .jumbotron h2 {
@@ -399,7 +405,7 @@ section#main .container section.activities-container h2 {
 #gitePage .card {
   text-align: center;
   margin: 1rem 0.5rem;
-  border: 1px solid #76b38f;
+  border: 1px solid #A5D0B6;
 }
 #gitePage .card .card_img {
   width: auto;
@@ -426,7 +432,24 @@ section#main .container section.activities-container h2 {
 
 @media (min-width: 576px) {
   #gitePage .jumbotron {
+    background: #C3CDBA;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: 4rem 2rem 1rem 2rem;
+  }
+  #gitePage .jumbotron img {
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+  #gitePage .jumbotron .button_banner {
+    display: block;
+    margin: 1rem auto 0;
+  }
+  #gitePage .jumbotron h2 {
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
   }
   #gitePage .card h2 {
     margin-bottom: 1rem;

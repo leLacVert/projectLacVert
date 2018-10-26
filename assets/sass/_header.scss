@@ -20,10 +20,10 @@ nav {
   justify-content: center;
   align-items: flex-end;
   line-height: 3rem;
-  background: rgba(255, 255, 255, .3);
+  background: rgba(255, 255, 255, 0.3);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
+
   .link {
     position: relative;
     margin: auto 1rem;
@@ -35,8 +35,13 @@ nav {
         color: #000;
       }
     }
+    .link_click {
+      cursor: pointer;
+      &:hover {
+        color: #000;
+      }
+    }
     .nav_up {
-      position: relative;
       display: none;
     }
     .nav_down {
@@ -54,8 +59,8 @@ nav {
         border-bottom: 1px solid $gris;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        i{
-          margin: auto .25rem;
+        i {
+          margin: auto 0.25rem;
           font-size: 1rem;
         }
         &:hover {
@@ -106,9 +111,9 @@ nav {
 @media (min-width: 1200px) {
   header {
     height: 175px;
-      .header_logo {
-        width: 225px;
-      }
+    .header_logo {
+      width: 225px;
+    }
   }
   nav {
     .link {
@@ -124,21 +129,22 @@ nav {
       .nav_down {
         position: absolute;
         top: 195px;
+        left: -50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: max-content;
-        transition: ease-in;
+        width: 15rem;
+        transition: top 1s ease-in;
 
         a {
           width: auto;
           text-decoration: none;
-          line-height: 3rem;
+          line-height: 2.5rem;
           background: $vertgris;
           border-bottom: 1px solid $gris;
 
           i {
-            margin: auto .25rem;
+            margin: auto 0.75rem;
             font-size: 1rem;
           }
 
@@ -151,4 +157,3 @@ nav {
     }
   }
 }
-

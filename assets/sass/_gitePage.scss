@@ -4,15 +4,14 @@
   }
   padding-top: 1rem;
   .jumbotron {
-    background: #C3CDBA;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display: contents;
     img {
+      margin-bottom: 1rem;
       width: 100%;
       border-radius: .3rem;
     }
     .button_banner {
+      display: none;
       margin: 1rem auto 0;
     }
     h2 {
@@ -55,7 +54,26 @@
 @media (min-width: 576px) {
   #gitePage {
     .jumbotron {
+      background: #C3CDBA;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
       padding: 4rem 2rem 1rem 2rem;
+      img {
+        width: 100%;
+        border-radius: .3rem;
+      }
+
+      .button_banner {
+        display: block;
+        margin: 1rem auto 0;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        margin: 0;
+        padding: 0;
+      }
     }
     .card {
       h2 {
