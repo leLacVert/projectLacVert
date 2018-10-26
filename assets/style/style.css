@@ -14,7 +14,9 @@ h1,
 h2 {
   font-family: "Mali", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
+  padding-top: 1rem;
+  color: #333;
 }
 
 .container-fluid {
@@ -54,7 +56,7 @@ h2 {
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -220,6 +222,15 @@ nav .link .nav_down a:hover {
   }
 }
 
+.bg-red {
+  background: #f00;
+}
+
+.bg-green {
+  background: #0f0;
+}
+
+
 section#main {
   padding: 5px;
   width: 100%;
@@ -228,12 +239,14 @@ section#main {
 
 section#main .container {
   width: 100%;
+  /*min-height:550px;*/
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
 section#main .container .jumbotron {
   background: #C3CDBA;
+  /*height:200px;*/
   width: 100%;
   margin-bottom: 30px;
   padding: 10px;
@@ -248,10 +261,13 @@ section#main .container .jumbotron img {
 section#main .container section.activities-container {
   border-radius: 4px;
   background: #C3CDBA;
+  /*818B7D ;*/
+  /*height:500px;*/
   width: 100%;
 }
 
 section#main .container section.activities-container h2 {
+  /*text-indent: 10px;*/
   padding: 10px;
   background: #fff;
   width: 100%;
@@ -394,20 +410,69 @@ section#main .container section.activities-container h2 {
     height: 70px;
   }
 }
-
+#gitePage {
+  padding-top: 1rem;
+}
+#gitePage h1 {
+  font-size: 2rem;
+}
+#gitePage .jumbotron {
+  background: #C3CDBA;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#gitePage .jumbotron img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+#gitePage .jumbotron .button_banner {
+  margin: 1rem auto 0;
+}
+#gitePage .jumbotron h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
 #gitePage .card {
   text-align: center;
   margin: 1rem 0.5rem;
-}
-
-#gitePage .card .banner_img {
-  width: -webkit-fill-available;
-  height: fit-content;
+  border: 1px solid #76b38f;
 }
 
 #gitePage .card .card_img {
   width: auto;
   height: 200px;
+}
+#gitePage .card .card_button {
+  display: flex;
+  margin: 1rem auto;
+}
+#gitePage .card .card_button .btn {
+  margin: auto;
+}
+#gitePage .card h2 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+#gitePage .card p {
+  text-align: left;
+}
+#gitePage .card_small {
+  height: 700px;
+}
+
+@media (min-width: 576px) {
+  #gitePage .jumbotron {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+  #gitePage .card h2 {
+    margin-bottom: 1rem;
+  }
+  #gitePage .card_small {
+    height: 650px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
