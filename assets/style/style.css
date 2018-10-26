@@ -93,12 +93,16 @@ section#main .container section.activities-container h2{
   width : 100%;
   height:70px;
 }
+/****** CSS WILLY ******/
 /****** FOOTER ******/
 footer{
   background:#404746;
   width : 100%;
   padding-bottom: 30px;
   padding-top: 30px;
+}
+footer i {
+  color: #eee;
 }
 .accordion {
   background-color: #eee;
@@ -111,7 +115,7 @@ footer{
   outline: none;
   font-size: 15px;
   transition: 0.4s;
-  border-bottom: 2px solid #0286e7;
+  border-bottom: 2px solid #14bc03;
 }
 
 .active, .accordion:hover {
@@ -119,15 +123,16 @@ footer{
 }
 
 .panel {
-  display: none;
+  height: 0px;
   background-color: white;
   overflow: hidden;
+  transition: height 2s linear;
 }
 .panel a {
   font-family: Helvetica;
 }
 #wg-down {
-  border-bottom: 2px solid black;
+  border-bottom: none;
   background-image: url('../img/down.png');
   background-position-x: 90%;
   background-repeat: no-repeat;
@@ -141,16 +146,40 @@ footer{
   background-size: 20px;
   background-position-y: center;
 }
+.wg-contact {
+  border-bottom: none;
+}
 .panel ul {
   padding: 0;
+  margin-bottom: 0px;
 }
 .panel ul li {
-  background-color: #0f0;
+  background-color: #dedede;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2px solid #0286e7;
+}
+.wg-noBorder {
+  border-bottom: 2px solid #14bc03!important;
 }
 .wg-creditCard {
   margin-top: 10px;
 }
-/****** FOOTER ******/
+.wg-creditCard div p {
+  font-size: 13px;
+  color: white;
+}
+.wg-creditCard div p a {
+  color: white;
+}
+/****** END-CSS WILLY ******/
+/****** END-FOOTER ******/
 .text-muted{
   color:#0286E7 !important; /* #14bc03 */
 }
@@ -174,6 +203,16 @@ footer{
     /*min-height:550px;*/
   }
 
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wg-creditCard div p  {
+    text-align: center;
+  }
+  footer .wg-creditCard i {
+    font-size: 40px;
+  }
 }
 
 /****** Large devices (desktops, 992px and up) ******/
@@ -244,7 +283,6 @@ footer{
   footer{
     background:#404746;
     width : 100%;
-    height : 250px;
   }
 
 }
