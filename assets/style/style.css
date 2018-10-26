@@ -10,8 +10,7 @@ body {
   font-family: "K2D", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: "Mali", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
   margin: 0 auto 1rem;
@@ -33,7 +32,6 @@ h2 {
     font-size: 1rem;
   }
 }
-
 @media (min-width: 768px) {
   h1 {
     font-size: 1.3rem;
@@ -43,7 +41,6 @@ h2 {
     font-size: 1.15rem;
   }
 }
-
 @media (min-width: 992px) {
   h1 {
     font-size: 1.45rem;
@@ -53,7 +50,6 @@ h2 {
     font-size: 1.3rem;
   }
 }
-
 @media (min-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -63,7 +59,6 @@ h2 {
     font-size: 1.45rem;
   }
 }
-
 header {
   position: relative;
   display: flex;
@@ -72,7 +67,6 @@ header {
   background-size: cover;
   height: 150px;
 }
-
 header .header_logo {
   width: 100px;
   position: absolute;
@@ -90,27 +84,22 @@ nav {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 nav .link {
   position: relative;
   margin: auto 1rem;
 }
-
 nav .link a {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
 }
-
 nav .link a:hover {
   color: #000;
 }
-
 nav .link .nav_up {
   position: relative;
   display: none;
 }
-
 nav .link .nav_down {
   position: absolute;
   bottom: 0;
@@ -119,7 +108,6 @@ nav .link .nav_down {
   justify-content: center;
   flex-direction: column;
 }
-
 nav .link .nav_down a {
   background: #76b38f;
   color: #333;
@@ -129,12 +117,10 @@ nav .link .nav_down a {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
 nav .link .nav_down a i {
   margin: auto 0.25rem;
   font-size: 1rem;
 }
-
 nav .link .nav_down a:hover {
   background: #333;
   color: #76b38f;
@@ -148,17 +134,14 @@ nav .link .nav_down a:hover {
   nav .link {
     margin: auto 1.25rem;
   }
-
   nav .link a {
     font-size: 1.25rem;
   }
 }
-
 @media (min-width: 992px) {
   header {
     height: 175px;
   }
-
   header .header_logo {
     width: 175px;
   }
@@ -166,17 +149,14 @@ nav .link .nav_down a:hover {
   nav .link {
     margin: auto 1.35rem;
   }
-
   nav .link a {
     font-size: 1.35rem;
   }
 }
-
 @media (min-width: 1200px) {
   header {
     height: 175px;
   }
-
   header .header_logo {
     width: 225px;
   }
@@ -184,15 +164,12 @@ nav .link .nav_down a:hover {
   nav .link {
     margin: auto 1.5rem;
   }
-
   nav .link a {
     font-size: 1.5rem;
   }
-
   nav .link .nav_up {
     position: relative;
   }
-
   nav .link .nav_down {
     position: absolute;
     top: 195px;
@@ -202,7 +179,6 @@ nav .link .nav_down a:hover {
     width: max-content;
     transition: ease-in;
   }
-
   nav .link .nav_down a {
     width: auto;
     text-decoration: none;
@@ -210,26 +186,15 @@ nav .link .nav_down a:hover {
     background: #76b38f;
     border-bottom: 1px solid #808285;
   }
-
   nav .link .nav_down a i {
     margin: auto 0.25rem;
     font-size: 1rem;
   }
-
   nav .link .nav_down a:hover {
     background: #333;
     color: #76b38f;
   }
 }
-
-.bg-red {
-  background: #f00;
-}
-
-.bg-green {
-  background: #0f0;
-}
-
 
 section#main {
   padding: 5px;
@@ -314,34 +279,6 @@ section#main .container section.activities-container h2 {
   /* #14bc03 */
 }
 
-
-.mentions-container {
-  padding: 25px !important;
-
-}
-
-.mentions-container h1 {
-  font-size: 2em;
-  width: 100%;
-  text-align: center;
-}
-
-.mentions-container h2 {
-  font-size: 1.3em;
-}
-
-.mentions-container h3 {
-  font-size: 1.2em;
-}
-
-.mentions-container pre {
-  width: 100%;
-}
-
-.mentions-container p {
-  color: #333;
-}
-
 /****** Smartphones M ******/
 /****** Smartphones L ******/
 @media (max-width: 425px) {
@@ -355,7 +292,6 @@ section#main .container section.activities-container h2 {
     /*min-height:550px;*/
   }
 }
-
 /****** Large devices (desktops, 992px and up) ******/
 @media (min-width: 992px) {
   section#main {
@@ -411,16 +347,6 @@ section#main .container section.activities-container h2 {
     height: 70px;
   }
 }
-
-
-#gitePage .card {
-  text-align: center;
-  margin: 1rem 0.5rem;
-}
-
-#gitePage .card .banner_img {
-  width: -webkit-fill-available;
-  height: fit-content;
 #gitePage {
   padding-top: 1rem;
 }
@@ -450,7 +376,6 @@ section#main .container section.activities-container h2 {
   margin: 1rem 0.5rem;
   border: 1px solid #76b38f;
 }
-
 #gitePage .card .card_img {
   width: auto;
   height: 200px;
@@ -487,90 +412,3 @@ section#main .container section.activities-container h2 {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-/********* Page description Gite ***********/
-/* .container {
-	margin: 0 auto;
-	max-width: 700px;
-	max-height: 100vh;
-	background-color: white;
-} */
-
-
-/* Classes utile */
-.pg-xy-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.pg-transition {
-  transition: all 350ms ease-in-out;
-}
-
-.pg-r-3-2 {
-  width: 100%;
-  padding-bottom: 66.667%;
-  background-color: #ddd;
-}
-
-.pg-image-holder {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/* Styles principale */
-.pg-galerie-wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.pg-galerie {
-  position: relative;
-  white-space: nowrap;
-  font-size: 0;
-}
-
-.pg-objet-wrap {
-  cursor: pointer;
-  width: 23%;
-  /* valueur arbitraire */
-  display: inline-block;
-  background-color: white;
-}
-
-.pg-galerie-objet {
-  opacity: 0.5;
-}
-
-.pg-galerie-objet.pg-active {
-  opacity: 1;
-}
-
-.pg-controle {
-  font-size: 0;
-  border-top: none;
-}
-
-.pg-move-btn {
-  display: inline-block;
-  width: 50%;
-  border: none;
-  color: #ccc;
-  background-color: transparent;
-  padding: 0.2em 1.5em;
-}
-
-.pg-move-btn:first-child {
-  border-right: none;
-}
-
-.pg-move-btn.pg-left {
-  cursor: w-resize;
-}
-
-.pg-move-btn.pg-right {
-  cursor: e-resize;
-}
