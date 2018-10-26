@@ -140,6 +140,52 @@ nav .link .nav_down a:hover {
   color: #76b38f;
 }
 
+
+.activite-element {
+  background: #fff;
+  margin: 5px 10px;
+  padding:0;
+  overflow: hidden;
+}
+.activite-element a{
+  text-decoration: none;
+}
+.activite-inside-element {
+  padding:10px;
+  background-repeat:no-repeat;
+  font-size : 2.5em;
+  color:#fff;
+  text-shadow:1px 1px 5px rgba(0,0,0,1);
+  height:150px;
+  line-height:130px;
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+}
+
+
+.activite-element span {
+  display: block;
+  width:100%;
+  background:rgba(255, 255, 255, 0.3);
+  text-align: center;
+
+}
+.activite-element-accrobranche .activite-inside-element{
+  background-image: url("../img/banneracro.jpg") ;
+}
+.activite-element-escalade .activite-inside-element{
+  background-image: url("../img/bannerclimb.jpeg") ;
+}
+.activite-element-pedalo .activite-inside-element{
+  background-image: url("../img/bannerpedalo.png") ;
+}
+.activite-element-ferme .activite-inside-element{
+  background-image: url("../img/bannerferme.jpg") ;
+}
+
+
+
 @media (min-width: 768px) {
   header .header_logo {
     width: 150px;
@@ -313,7 +359,33 @@ section#main .container section.activities-container h2 {
   color: #0286E7 !important;
   /* #14bc03 */
 }
+.mentions-container{
+  padding:25px !important;
 
+
+}
+.mentions-container h1{
+  font-size:2em;
+  width:100%;
+  text-align: center;
+}
+.mentions-container h2, .mentions-container h3{
+  text-align: left;
+  font-weight: bold;
+}
+.mentions-container h2{
+  font-size:1.3em;
+}
+.mentions-container h3{
+  font-size:1.2em;
+}
+.mentions-container pre{
+  width:100%;
+}
+.mentions-container p{
+  color:#333;
+}
+=======
 
 .mentions-container {
   padding: 25px !important;
@@ -341,6 +413,7 @@ section#main .container section.activities-container h2 {
 .mentions-container p {
   color: #333;
 }
+
 
 /****** Smartphones M ******/
 /****** Smartphones L ******/
@@ -401,6 +474,89 @@ section#main .container section.activities-container h2 {
     text-align: center;
   }
 
+  .activite-element {
+    background: #fff;
+    margin: 5px 10px;
+    padding:0;
+    overflow: hidden;
+  }
+
+  .activite-inside-element {
+    padding:10px;
+    background-repeat:no-repeat;
+    font-size : 2.5em;
+    color:#fff;
+    text-shadow:1px 1px 5px rgba(0,0,0,1);
+    height:150px;
+    line-height:130px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+  }
+  .activite-inside-element::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   /* background-color: rgba(52, 73, 94, 0.75);*/
+  }
+  .activite-inside-element span {
+    display: none;
+
+  }
+  .activite-element:hover .activite-inside-element,
+  .activite-element:focus .activite-inside-element {
+    transform: scale(1.2);
+  }
+  .activite-element:hover .activite-inside-element:before,
+  .activite-element:focus .activite-inside-element:before {
+    display: block;
+  }
+
+  .activite-element:hover span {
+    display: block;
+    width:100%;
+    background:rgba(255, 255, 255, 0.3);
+    text-align: center;
+
+  }
+
+  .activite-element-accrobranche .activite-inside-element{
+    background-image: url("../img/banneracro.jpg") ;
+  }
+  .activite-element-escalade .activite-inside-element{
+    background-image: url("../img/bannerclimb.jpeg") ;
+  }
+  .activite-element-pedalo .activite-inside-element{
+    background-image: url("../img/bannerpedalo.png") ;
+  }
+  .activite-element-ferme .activite-inside-element{
+    background-image: url("../img/bannerferme.jpg") ;
+  }
+
+
+  .contact-element-container {
+    margin: 5px auto;
+  }
+
+  .contact-element {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    text-indent: 10px;
+  }
+
+  .icon-contact-element {
+    content: " ";
+    display: block;
+    float: left;
+    background: #76B38F;
+    width: 50px;
+  }
   .activities-container .row {
     width: 100%;
   }
