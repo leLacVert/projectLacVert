@@ -298,6 +298,42 @@ span.gite-tarif-weekend::after{
   content:"W.E";
   display: contents;
 }
+.tarif-activite-element{
+    height:150px;
+    margin:0;
+    background-repeat:no-repeat;
+    font-size : 2em;
+    color:#fff;
+    text-shadow:1px 1px 5px rgba(0,0,0,1);
+    background-size: cover;
+    background-position: center;
+}
+.tarif-activite-text{
+    margin:0;
+    padding:10px;
+}
+.tarif-accrobranche{
+    background-image: url("../img/banneracro.jpg") ;
+}
+.tarif-escalade{
+    background-image: url("../img/bannerclimb.jpeg") ;
+}
+.tarif-pedalo{
+    background-image: url("../img/bannerpedalo.png") ;
+}
+.tarif-ferme-pedagogique{
+    background-image: url("../img/bannerferme.jpg") ;
+}
+.tarif-activite-element span {
+    height:30px;
+    line-height:30px;
+    background: #333;
+    text-align:center;
+    padding: 0 10px;
+    width:100%;
+    font-size:.7em;
+}
+
 
 @media (min-width: 768px) {
   header .header_logo {
@@ -641,6 +677,7 @@ section#main .container section.activities-container h2 {
     display: none;
 
   }
+
   .activite-element:hover .activite-inside-element,
   .activite-element:focus .activite-inside-element {
     transform: scale(1.2);
@@ -670,6 +707,10 @@ section#main .container section.activities-container h2 {
   .activite-element-ferme .activite-inside-element{
     background-image: url("../img/bannerferme.jpg") ;
   }
+    .tarif-activite-element .activite-inside-element{
+        background-size: cover;
+
+    }
 
 
   .contact-element-container {
