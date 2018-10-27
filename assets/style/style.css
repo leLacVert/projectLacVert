@@ -6,7 +6,7 @@
 }
 
 .sw-h{
-  height:50px;
+  min-height:100px;
 }
 .sw-w-bg{  background: white;}
 .sw-r-bg{  background: red;}
@@ -197,6 +197,7 @@ nav .link .nav_down a:hover {
     background: #fff;
     margin:0 auto;
     border-radius: 4px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.3);
 }
 .gite-element-head{
     text-align:center;
@@ -236,7 +237,7 @@ caption{
   display : table;
 }
 .pricing-table{
-  height:80px;
+  height:100px;
 }
 .pricing-table th{
     font-size:.85em;
@@ -244,7 +245,7 @@ caption{
 .pricing-table .thead-dark th{
   color:#000;
   height:20px !important;
-  background: #8fd7ac !important;
+  background: #84bfd7 !important;
 }
 .pricing-table th, .pricing-table td{
   border: 1px solid #395745 !important;
@@ -332,6 +333,34 @@ span.gite-tarif-weekend::after{
     padding: 0 10px;
     width:100%;
     font-size:.7em;
+}
+
+.gite-tarif-title span.gite-title{
+    height:30px;
+    line-height:30px;
+    background: #333;
+    color:#fff;
+    text-align:center;
+    padding: 0 10px;
+    width:calc(100% - 20px);
+    margin-left:10px;
+    margin-top:5px;
+    border-radius: 4px;
+    font-size:1.5em;
+}
+
+.gites-element{
+    background: #fff;
+    padding:10px;
+}
+.gite-element img{
+   width:100%;
+}
+.gite-element div{
+    width:100%;
+    background: #84bfd7; /*8fd7ac*/
+    color:#000;
+    text-align: center;
 }
 
 
