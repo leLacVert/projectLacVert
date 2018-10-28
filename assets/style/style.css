@@ -422,27 +422,33 @@ section#main .container section.activities-container h2 {
 #gitePage {
   padding-top: 1rem;
 }
+
 #gitePage h1 {
   font-size: 2rem;
 }
+
 #gitePage .jumbotron {
   background: #C3CDBA;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 #gitePage .jumbotron img {
   width: 100%;
   border-radius: 0.3rem;
 }
+
 #gitePage .jumbotron .button_banner {
   margin: 1rem auto 0;
 }
+
 #gitePage .jumbotron h2 {
   font-size: 1.75rem;
   margin: 0;
   padding: 0;
 }
+
 #gitePage .card {
   text-align: center;
   margin: 1rem 0.5rem;
@@ -453,21 +459,26 @@ section#main .container section.activities-container h2 {
   width: auto;
   height: 200px;
 }
+
 #gitePage .card .card_button {
   display: flex;
   margin: 1rem auto;
 }
+
 #gitePage .card .card_button .btn {
   margin: auto;
 }
+
 #gitePage .card h2 {
   font-size: 1.75rem;
   margin: 0 0 0.5rem 0;
   padding: 0;
 }
+
 #gitePage .card p {
   text-align: left;
 }
+
 #gitePage .card_small {
   height: 700px;
 }
@@ -476,9 +487,11 @@ section#main .container section.activities-container h2 {
   #gitePage .jumbotron {
     padding: 4rem 2rem 1rem 2rem;
   }
+
   #gitePage .card h2 {
     margin-bottom: 1rem;
   }
+
   #gitePage .card_small {
     height: 650px;
   }
@@ -487,14 +500,8 @@ section#main .container section.activities-container h2 {
 /*# sourceMappingURL=style.css.map */
 
 /********* Page description Gite ***********/
-/* .container {
-	margin: 0 auto;
-	max-width: 700px;
-	max-height: 100vh;
-	background-color: white;
-} */
 
-
+/****** Galerie ******/
 /* Classes utile */
 .pg-xy-center {
   position: absolute;
@@ -510,7 +517,7 @@ section#main .container section.activities-container h2 {
 .pg-r-3-2 {
   width: 100%;
   padding-bottom: 66.667%;
- /* background-color: #ddd;*/
+  /* background-color: #ddd;*/
 }
 
 .pg-image-holder {
@@ -536,9 +543,11 @@ section#main .container section.activities-container h2 {
   width: 23%;
   /* valueur arbitraire */
   display: inline-block;
-  /*background-color: white;*/
+  border: 2px ridge #CCC
+    /*background-color: white;*/
 }
-.pg-objet-wrap figure{
+
+.pg-objet-wrap figure {
   margin: 0 0 0;
 }
 
@@ -577,6 +586,21 @@ section#main .container section.activities-container h2 {
 .pg-move-btn.pg-right {
   cursor: e-resize;
 }
-.pg-detail-p{
-  border-bottom: 1px solid #999;
+
+/****** Desciption ******/
+.pg-detail-p {
+  margin-bottom: 0;
+  margin-left: 3%;
+}
+
+.pg-detail-hr {
+  height: 1px;
+  color: black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pg-detail-p2 {
+  width: 95%;
+  margin: 0 auto;
 }
