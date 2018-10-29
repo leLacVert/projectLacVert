@@ -1,0 +1,25 @@
+.actinfos table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.actinfos table,
+th,
+tr,
+td {
+  border: 1px solid #c3cdba;
+  padding: 15px;
+}
+
+.actinfos td {
+  height: 40px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.actinfos thead {
+  text-align: center;
+  font-weight: bold;
+  height: 40px;
+  background-color: #c3cdba;
+}

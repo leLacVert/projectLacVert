@@ -75,7 +75,7 @@ header .logo img {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  width: 120px;
+  width: 100px;
 }
 
 nav {
@@ -94,7 +94,6 @@ nav ul li.active ul {
   background: #6182B2;
   color: #999;
   width: max-content;
-  z-index: 2;
 }
 nav ul li {
   list-style: none;
@@ -152,7 +151,7 @@ nav ul li a .active {
     height: 150px;
   }
   header .logo img {
-    width: 60px;
+    width: 50px;
     top: 0.5rem;
   }
 
@@ -1021,4 +1020,4 @@ footer form {
   right: 5px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleReboot.css.map */

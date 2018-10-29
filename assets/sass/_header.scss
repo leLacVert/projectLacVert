@@ -14,7 +14,7 @@ header {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    height: 100px;
+    width: 120px;
   }
 }
 
@@ -34,6 +34,7 @@ nav {
       background: #6182B2;
       color: #999;
       width: max-content;
+      z-index: 2;
     }
 
     li {
@@ -98,7 +99,7 @@ nav {
     background: url('./../img/header_banner-mobil.jpg') no-repeat center;
     height: 150px;
     .logo img {
-      height: 50px;
+      width: 60px;
       top: .5rem;
     }
   }

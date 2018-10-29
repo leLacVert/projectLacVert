@@ -1,58 +1,42 @@
+// document.getElementById('menu-toggle').addEventListener('click', function () {
+//   var burger = document.getElementsByTagName('nav');
 
-  function accordeon() {
-      var accordeon = new Audio();
-      accordeon.src = "assets/sound/accordeon.mp3";
-      accordeon.play();
-      
-  }
-  function accordeon2() {
-      var accordeon2 = new Audio();
-      accordeon2.src = "assets/sound/accordeon2.wav";
-      accordeon2.play();
-  }
+//   if (burger.classList.contains('active')) {
+//     burger.classList.remove('active');
+//   } else {
+//     burger.classList.add('active');
+//   }
+// }, false);
 
-  function openModal() {
-      document.getElementById("modal").style.display = "block";
-  }
-  function closeModal() {
-      document.getElementById("modal").style.display = "none";
-  }
+$(document).ready(function () {
+	$('#menu-toggle').click(function () {
+		$('nav').toggleClass('active')
+	})
+	$('ul li').click(function () {
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+})
 
-  var radio = document.getElementsByTagName("radio");
-  while (radio[0].value == 'non') {
-    var inputName = document.getElementById('inputName');
-    var inputMail = document.getElementById('inputMail');
-    inputName.style.display = "none";
-    inputMail.style.display = "none";
-  }
-inputName.style.display = "block";
-inputMail.style.display = "block";
-  
 var galerie = document.querySelector('.pg-galerie');
 var galerieObjet = document.querySelectorAll('.pg-galerie-objet');
 var numOfItems = galerie.children.length;
 var objetWidth = 23; // pourcent comme en css
-
 var featured = document.querySelector('.pg-featured-objet');
-
 var leftBtn = document.querySelector('.pg-move-btn.pg-left');
 var rightBtn = document.querySelector('.pg-move-btn.pg-right');
 var leftInterval;
 var rightInterval;
-
 var scrollRate = 0.2;
 var left;
 
 function selectObjet(e) {
 	if (e.target.classList.contains('pg-active')) return;
-
 	featured.style.backgroundImage = e.target.style.backgroundImage;
-
 	for (var i = 0; i < galerieObjet.length; i++) {
 		if (galerieObjet[i].classList.contains('pg-active'))
 			galerieObjet[i].classList.remove('pg-active');
 	}
-
 	e.target.classList.add('pg-active');
 }
 
@@ -73,10 +57,8 @@ function galerieWrapRight() {
 
 function moveLeft() {
 	left = left || 0;
-
 	leftInterval = setInterval(function () {
 		galerie.style.left = left + '%';
-
 		if (left > -objetWidth) {
 			left -= scrollRate;
 		} else {
@@ -90,18 +72,14 @@ function moveRight() {
 	//etre sure qu'il y a un élément a d
 	if (left > -objetWidth && left < 0) {
 		left = left - objetWidth;
-
 		var last = galerie.children[galerie.children.length - 1];
 		galerie.removeChild(last);
 		galerie.style.left = left + '%';
 		galerie.insertBefore(last, galerie.children[0]);
 	}
-
 	left = left || 0;
-
 	leftInterval = setInterval(function () {
 		galerie.style.left = left + '%';
-
 		if (left < 0) {
 			left += scrollRate;
 		} else {
@@ -115,17 +93,14 @@ function stopMouvement() {
 	clearInterval(leftInterval);
 	clearInterval(rightInterval);
 }
-
 leftBtn.addEventListener('mouseenter', moveLeft);
 leftBtn.addEventListener('mouseleave', stopMouvement);
 rightBtn.addEventListener('mouseenter', moveRight);
 rightBtn.addEventListener('mouseleave', stopMouvement);
-
-
 //Start
 (function init() {
 	var pageName = document.getElementsByTagName('body');
-	
+
 	if (pageName[0].classList.contains('gite2p1')) {
 		var images = [
 			'./assets/img/gite2p1/gite2p1.jpg',
@@ -142,7 +117,7 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 			'./assets/img/gite2p2/sdb.jpg',
 			'./assets/img/gite2p2/sejour.jpg'
 		];
-	}else if (pageName[0].classList.contains('gite2p3')) {
+	} else if (pageName[0].classList.contains('gite2p3')) {
 		var images = [
 			'./assets/img/gite2p3/gite2p3.jpg',
 			'./assets/img/gite2p3/chambre.jpg',
@@ -150,7 +125,7 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 			'./assets/img/gite2p3/sdb.jpg',
 			'./assets/img/gite2p3/sejour.jpg'
 		];
-	}else if (pageName[0].classList.contains('gite4p1')) {
+	} else if (pageName[0].classList.contains('gite4p1')) {
 		var images = [
 			'./assets/img/gite4p1/gite4p1.jpg',
 			'./assets/img/gite4p1/chambre1.jpg',
@@ -160,7 +135,7 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 			'./assets/img/gite4p1/sdb2.jpg',
 			'./assets/img/gite4p1/sejour.jpg'
 		];
-	}else if (pageName[0].classList.contains('gite4p2')) {
+	} else if (pageName[0].classList.contains('gite4p2')) {
 		var images = [
 			'./assets/img/gite4p2/gite4p2.jpg',
 			'./assets/img/gite4p2/chambre1.jpg',
@@ -169,14 +144,14 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 			'./assets/img/gite4p2/sdb.jpg',
 			'./assets/img/gite4p2/sejour.jpg'
 		];
-	}else if (pageName[0].classList.contains('gite6p')) {
+	} else if (pageName[0].classList.contains('gite6p')) {
 		var images = [
 			'./assets/img/gite6p/gite6.jpg',
 			'./assets/img/gite6p/chambre1.jpg',
 			'./assets/img/gite6p/chambre2.jpg',
 			'./assets/img/gite6p/chambre3.jpg',
 			'./assets/img/gite6p/cuisine.jpg',
-			'./assets/img/gite6p/cuisine2.jpg', 
+			'./assets/img/gite6p/cuisine2.jpg',
 			'./assets/img/gite6p/cuisine3.jpg',
 			'./assets/img/gite6p/hangar.jpg',
 			'./assets/img/gite6p/piscine.jpg',
@@ -188,11 +163,9 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 	}
 	//initialisation 
 	featured.style.backgroundImage = 'url(' + images[0] + ')';
-
 	//modif img et addListener
 	for (var i = 0; i < galerieObjet.length; i++) {
 		galerieObjet[i].style.backgroundImage = 'url(' + images[i] + ')';
 		galerieObjet[i].addEventListener('click', selectObjet);
 	}
 })();
-
