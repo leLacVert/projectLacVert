@@ -530,6 +530,7 @@ section#main .container section.activities-container h2 {
 .pg-galerie-wrap {
   position: relative;
   overflow: hidden;
+  border: 2px ridge #CCC
 }
 
 .pg-galerie {
@@ -543,8 +544,7 @@ section#main .container section.activities-container h2 {
   width: 23%;
   /* valueur arbitraire */
   display: inline-block;
-  border: 2px ridge #CCC
-    /*background-color: white;*/
+  /*background-color: white;*/
 }
 
 .pg-objet-wrap figure {
@@ -588,6 +588,10 @@ section#main .container section.activities-container h2 {
 }
 
 /****** Desciption ******/
+.pg-detail {
+  border: 1px solid black;
+}
+
 .pg-detail-p {
   margin-bottom: 0;
   margin-left: 3%;
