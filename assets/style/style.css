@@ -4,7 +4,9 @@
   text-decoration: none;
   list-style: none;
 }
-
+a{
+  text-decoration: none !important;
+}
 .sw-h{
   min-height:100px;
 }
@@ -50,6 +52,7 @@ h2 {
   h2 {
     font-size: 1.15rem;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -238,6 +241,7 @@ caption{
 }
 .pricing-table{
   height:100px;
+  table-layout: fixed;
 }
 .pricing-table th{
     font-size:.85em;
@@ -348,7 +352,6 @@ span.gite-tarif-weekend::after{
     border-radius: 4px;
     font-size:1.5em;
 }
-
 .gites-element{
     background: #fff;
     padding:10px;
@@ -375,6 +378,16 @@ span.gite-tarif-weekend::after{
 
   nav .link a {
     font-size: 1.25rem;
+  }
+  .btn-accueil-gites a i{
+    opacity: 1 !important;
+    position : relative;
+    background: #fff;
+    color:#7d8c9b;
+    height:var(--hauteur-bouton);
+    line-height: var(--hauteur-bouton);
+    padding : 0 7px;
+    float:right;
   }
 
 }
@@ -407,6 +420,7 @@ span.gite-tarif-weekend::after{
     content:"WeekEnd";
     display: contents;
   }
+
 
 }
 
@@ -494,6 +508,35 @@ section#main .container .jumbotron {
 section#main .container .jumbotron img {
   width: 100%;
   margin: 10px auto;
+}
+
+.btn-accueil-gites{
+  width:100%;
+  background: #7d8c9b;
+  text-align: center;
+  text-decoration: none;
+  --hauteur-bouton : 50px;
+  height:var(--hauteur-bouton);
+  line-height: var(--hauteur-bouton);
+}
+.btn-accueil-gites a{
+  color:#fff;
+  font-size: 1.3em;
+}
+.btn-accueil-gites a i{
+  opacity: 0;
+  position : relative;
+  background: #fff;
+  color:#7d8c9b;
+  height:var(--hauteur-bouton);
+  line-height: var(--hauteur-bouton);
+  padding : 0 7px;
+  left:10px;
+  transition: .2s linear;
+}
+.btn-accueil-gites:hover a i{
+  opacity:1;
+  left:15px;
 }
 
 section#main .container section.activities-container {
@@ -607,6 +650,29 @@ section#main .container section.activities-container h2 {
 
 
 /****** Smartphones M ******/
+@media (max-width: 375px) {
+  .gite-tarif-title span.gite-title{
+    font-size:1em;
+  }
+  .pricing-table td{
+    font-size:.9em;
+  }
+  .btn-accueil-gites a{
+    font-size: 1.2em;
+  }
+  .activite-inside-element{
+    position: relative;
+  }
+
+  .activite-element span {
+    font-size: .9em;
+    line-height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+}
+
 /****** Smartphones L ******/
 @media (max-width: 425px) {
   section#main {
@@ -618,6 +684,10 @@ section#main .container section.activities-container h2 {
     width: 100%;
     /*min-height:550px;*/
   }
+  section#main .container h1{
+    font-size:2em;
+    text-align: left;
+  }
   .table-responsive{
     font-size:.9em;
   }
@@ -625,6 +695,17 @@ section#main .container section.activities-container h2 {
     line-height:20px;
     font-weight: bold;
     font-size: 1.1em;
+  }
+
+  .btn-accueil-gites a i{
+    opacity: 1;
+    position : relative;
+    background: #fff;
+    color:#7d8c9b;
+    height:var(--hauteur-bouton);
+    line-height: var(--hauteur-bouton);
+    padding : 0 7px;
+    float:right;
   }
 }
 
@@ -719,7 +800,7 @@ section#main .container section.activities-container h2 {
   .activite-element:hover span {
     display: block;
     width:100%;
-    background:rgba(255, 255, 255, 0.3);
+    background:rgba(0, 0, 0, 0.3);
     text-align: center;
 
   }
