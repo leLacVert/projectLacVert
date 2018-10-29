@@ -5,6 +5,14 @@
   list-style: none;
 }
 
+.sw-h{
+  min-height:100px;
+}
+.sw-w-bg{  background: white;}
+.sw-r-bg{  background: red;}
+.sw-g-bg{  background: green;}
+.sw-b-bg{  background: blue;}
+
 body {
   font-size: 14px;
   font-family: "K2D", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -140,6 +148,222 @@ nav .link .nav_down a:hover {
   color: #76b38f;
 }
 
+
+.activite-element {
+  background: #fff;
+  margin: 5px 10px;
+  padding:0;
+  overflow: hidden;
+}
+.activite-element a{
+  text-decoration: none;
+}
+.activite-inside-element {
+  padding:10px;
+  background-repeat:no-repeat;
+  font-size : 2.5em;
+  color:#fff;
+  text-shadow:1px 1px 5px rgba(0,0,0,1);
+  height:150px;
+  line-height:130px;
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+}
+
+
+.activite-element span {
+  display: block;
+  width:100%;
+  background:rgba(255, 255, 255, 0.3);
+  text-align: center;
+
+}
+.activite-element-accrobranche .activite-inside-element{
+  background-image: url("../img/banneracro.jpg") ;
+}
+.activite-element-escalade .activite-inside-element{
+  background-image: url("../img/bannerclimb.jpeg") ;
+}
+.activite-element-pedalo .activite-inside-element{
+  background-image: url("../img/bannerpedalo.png") ;
+}
+.activite-element-ferme .activite-inside-element{
+  background-image: url("../img/bannerferme.jpg") ;
+}
+
+.gite-row{
+    padding:10px 10px 0 10px;
+    background: #fff;
+    margin:0 auto;
+    border-radius: 4px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.3);
+}
+.gite-element-head{
+    text-align:center;
+    line-height:90px;
+    font-weight: bold;
+    font-size: .95em;
+}
+.gite-element-tab{
+    line-height:28px;
+}
+.gite-tarif-element{
+    text-align: center;
+    /*background: #333;*/
+    color:#333;
+    font-weight: bold;
+    margin:0;
+}
+.gite-tarif-element img{
+    width:100%;
+    padding:10px;
+    margin-left:-14px;
+}
+
+.table, th , td{
+  border : 1px solid #000 !important;
+}
+.table{
+  font-size:.8em;
+  text-align: center;
+}
+
+caption{
+  caption-side: top ;
+}
+.table-responsive{
+  width:100% !important;
+  display : table;
+}
+.pricing-table{
+  height:100px;
+}
+.pricing-table th{
+    font-size:.85em;
+}
+.pricing-table .thead-dark th{
+  color:#000;
+  height:20px !important;
+  background: #84bfd7 !important;
+}
+.pricing-table th, .pricing-table td{
+  border: 1px solid #395745 !important;
+  text-align: center;
+
+}
+.pricing-table .td-gite{
+  text-align: left;
+  line-height: 80px;
+}
+.pricing-table .td-gite:before{
+  display:block;
+  content:"";
+  width:160px;
+  height:80px;
+  background: #fff;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right:20px;
+  
+}
+.pricing-table .gite-idefix:before{
+  background: url("../img/tarifs/idefix.jpg");
+}
+.pricing-table .gite-babe:before{
+  background-image: url("../img/tarifs/babe.jpg");
+}
+.pricing-table .gite-garfield:before{
+  background-image: url("../img/tarifs/garfield.jpg");
+}
+.pricing-table .gite-jolly-jumper:before{
+  background-image: url("../img/tarifs/jolly-jumper.jpg");
+}
+.pricing-table .gite-saturnin:before{
+  background-image: url("../img/tarifs/saturnin.jpg");
+}
+.pricing-table .gite-tornado:before{
+  background-image: url("../img/tarifs/tornado.jpg");
+}
+.pricing-table td{
+  vertical-align: middle;
+}
+.pricing-table .td-gite-odd{
+  background: #fff;
+}
+span.gite-tarif-semaine::after{
+  content:"Sem";
+  display: contents;
+}
+span.gite-tarif-weekend::after{
+  content:"W.E";
+  display: contents;
+}
+.tarif-activite-element{
+    height:150px;
+    margin:0;
+    background-repeat:no-repeat;
+    font-size : 2em;
+    color:#fff;
+    text-shadow:1px 1px 5px rgba(0,0,0,1);
+    background-size: cover;
+    background-position: center;
+}
+.tarif-activite-text{
+    margin:0;
+    padding:10px;
+}
+.tarif-accrobranche{
+    background-image: url("../img/banneracro.jpg") ;
+}
+.tarif-escalade{
+    background-image: url("../img/bannerclimb.jpeg") ;
+}
+.tarif-pedalo{
+    background-image: url("../img/bannerpedalo.png") ;
+}
+.tarif-ferme-pedagogique{
+    background-image: url("../img/bannerferme.jpg") ;
+}
+.tarif-activite-element span {
+    height:30px;
+    line-height:30px;
+    background: #333;
+    text-align:center;
+    padding: 0 10px;
+    width:100%;
+    font-size:.7em;
+}
+
+.gite-tarif-title span.gite-title{
+    height:30px;
+    line-height:30px;
+    background: #333;
+    color:#fff;
+    text-align:center;
+    padding: 0 10px;
+    width:calc(100% - 20px);
+    margin-left:10px;
+    margin-top:5px;
+    border-radius: 4px;
+    font-size:1.5em;
+}
+
+.gites-element{
+    background: #fff;
+    padding:10px;
+}
+.gite-element img{
+   width:100%;
+}
+.gite-element div{
+    width:100%;
+    background: #84bfd7; /*8fd7ac*/
+    color:#000;
+    text-align: center;
+}
+
+
 @media (min-width: 768px) {
   header .header_logo {
     width: 150px;
@@ -152,6 +376,7 @@ nav .link .nav_down a:hover {
   nav .link a {
     font-size: 1.25rem;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -170,6 +395,19 @@ nav .link .nav_down a:hover {
   nav .link a {
     font-size: 1.35rem;
   }
+
+  .gite-tarif-element img {
+    width: 120px;
+  }
+  span.gite-tarif-semaine::after{
+    content:"Semaine";
+    display: contents;
+  }
+  span.gite-tarif-weekend::after{
+    content:"WeekEnd";
+    display: contents;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -313,7 +551,32 @@ section#main .container section.activities-container h2 {
   color: #0286E7 !important;
   /* #14bc03 */
 }
+.mentions-container{
+  padding:25px !important;
 
+
+}
+.mentions-container h1{
+  font-size:2em;
+  width:100%;
+  text-align: center;
+}
+.mentions-container h2, .mentions-container h3{
+  text-align: left;
+  font-weight: bold;
+}
+.mentions-container h2{
+  font-size:1.3em;
+}
+.mentions-container h3{
+  font-size:1.2em;
+}
+.mentions-container pre{
+  width:100%;
+}
+.mentions-container p{
+  color:#333;
+}
 
 .mentions-container {
   padding: 25px !important;
@@ -342,6 +605,7 @@ section#main .container section.activities-container h2 {
   color: #333;
 }
 
+
 /****** Smartphones M ******/
 /****** Smartphones L ******/
 @media (max-width: 425px) {
@@ -353,6 +617,14 @@ section#main .container section.activities-container h2 {
   section#main .container {
     width: 100%;
     /*min-height:550px;*/
+  }
+  .table-responsive{
+    font-size:.9em;
+  }
+  .gite-element-head{
+    line-height:20px;
+    font-weight: bold;
+    font-size: 1.1em;
   }
 }
 
@@ -401,6 +673,94 @@ section#main .container section.activities-container h2 {
     text-align: center;
   }
 
+  .activite-element {
+    background: #fff;
+    margin: 5px 10px;
+    padding:0;
+    overflow: hidden;
+  }
+
+  .activite-inside-element {
+    padding:10px;
+    background-repeat:no-repeat;
+    font-size : 2.5em;
+    color:#fff;
+    text-shadow:1px 1px 5px rgba(0,0,0,1);
+    height:150px;
+    line-height:130px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+  }
+  .activite-inside-element::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   /* background-color: rgba(52, 73, 94, 0.75);*/
+  }
+  .activite-inside-element span {
+    display: none;
+
+  }
+
+  .activite-element:hover .activite-inside-element,
+  .activite-element:focus .activite-inside-element {
+    transform: scale(1.2);
+  }
+  .activite-element:hover .activite-inside-element:before,
+  .activite-element:focus .activite-inside-element:before {
+    display: block;
+  }
+
+  .activite-element:hover span {
+    display: block;
+    width:100%;
+    background:rgba(255, 255, 255, 0.3);
+    text-align: center;
+
+  }
+
+  .activite-element-accrobranche .activite-inside-element{
+    background-image: url("../img/banneracro.jpg") ;
+  }
+  .activite-element-escalade .activite-inside-element{
+    background-image: url("../img/bannerclimb.jpeg") ;
+  }
+  .activite-element-pedalo .activite-inside-element{
+    background-image: url("../img/bannerpedalo.png") ;
+  }
+  .activite-element-ferme .activite-inside-element{
+    background-image: url("../img/bannerferme.jpg") ;
+  }
+    .tarif-activite-element .activite-inside-element{
+        background-size: cover;
+
+    }
+
+
+  .contact-element-container {
+    margin: 5px auto;
+  }
+
+  .contact-element {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    text-indent: 10px;
+  }
+
+  .icon-contact-element {
+    content: " ";
+    display: block;
+    float: left;
+    background: #76B38F;
+    width: 50px;
+  }
   .activities-container .row {
     width: 100%;
   }
@@ -418,6 +778,10 @@ section#main .container section.activities-container h2 {
   margin: 1rem 0.5rem;
 }
 
+#gitePage .card .banner_img {
+  width: -webkit-fill-available;
+  height: fit-content;
+}
 
 #gitePage {
   padding-top: 1rem;
