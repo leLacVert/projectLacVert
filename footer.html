@@ -21,9 +21,9 @@
         <div class="container">
             <div class="container-fluid">
                 <div id="accordion">
-                    <div class="card">
+                    <div class="card menuF">
                         <div class="card-header">
-                            <a href="index.html">Accueil</a>
+                            <a  href="index.html">Accueil</a>
                         </div>
                         <div class="card-header">
                             <a class="card-link" data-toggle="collapse" href="#collapseOne">
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card menuF2">
                         <div class="card-header">
                             <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
                                 Nos Activités
@@ -89,26 +89,43 @@
                 </div>
                 <div class="container-fluid">
                     <div class=" wg-creditCard row">
-                        <div class="col-4">
+                        <div class=" containerI col-12 col-md-3 text-center">
                             <i class="fab fa-cc-paypal fa-2x"></i>
                             <i class="fab fa-cc-visa fa-2x"></i>
                             <i class="fab fa-cc-amex fa-2x"></i>
                             <i class="fab fa-cc-mastercard fa-2x"></i>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4 col-md-3">
                             <p><a href="index.html">Mentions Légales</a><br>
-                                <a href="index.html">Newsletter</a></p>
+                                <a onclick="openModal()" href="#">Newsletter</a></p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4 col-md-3">
                             <p>Copyright 2018</p>
                         </div>
-                        <div class="col-2">
+                        <div class="col-4 col-md-3">
                             <i class=" wg-facebook fab fa-facebook-square fa-2x"></i>
                         </div>
-
                     </div>
                 </div>
-
+                <div class="col-12" id="modal">
+                    <form>
+                        <h1>Newsletter</h1>
+                        <div class="wg-info">
+                            <div>
+                                <input type="radio" id="scales" name="feature" value="oui"/>
+                                <label for="scales">Oui</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="scales" name="feature" value="non" checked/>
+                                <label for="scales">Non</label>
+                            </div>
+                            <input id="inputName" type="text" placeholder="Nom">
+                            <input id ="inputMail" type="email" placeholder="Adresse mail">
+                        </div>
+                        <input  onclick="closeModal()" type="submit" value="Envoyez">
+                        <button id="close" onclick="closeModal()">X</button>
+                    </form>
+                </div>
             </div>
     </footer>
     <!-- Optional JavaScript -->
