@@ -36,7 +36,14 @@ p.text-accueil {
 }
 .jumbotron {
   padding: 2rem 2rem;
-  margin-top: 1rem;
+  h1 {
+    font-size: 1.35rem;
+    span {
+      display: block;
+      font-size: 1.15rem;
+      font-style: italic;
+    }
+  }
 }
 .jumbotron img {
   width: 100%;
@@ -201,7 +208,7 @@ section.activities-container h2 {
   color: #333;
 }
 .gite-row {
-  padding: 10px 10px 0 10px;
+  padding: 1rem;
   background: #fff;
   margin: 0 auto;
   border-radius: 4px;
@@ -458,6 +465,14 @@ span.gite-tarif-weekend::after {
   .table-responsive {
     font-size: .9em;
   }
+  .jumbotron {
+    h1 {
+      font-size: 1.5rem;
+      span {
+        font-size: 1.25rem;
+      }
+    }
+  }
 
   .gite-element-head {
     line-height: 20px;
@@ -489,13 +504,27 @@ span.gite-tarif-weekend::after {
     padding: 0 7px;
     float: right;
   }
-
+  .jumbotron {
+    h1 {
+      font-size: 1.6rem;
+      span {
+        font-size: 1.35rem;
+      }
+    }
+  }
 }
 
 /****** Large devices (desktops, 992px and up) ******/
 @media (min-width: 992px) {
 
-
+  .jumbotron {
+    h1 {
+      font-size: 1.75rem;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
   section.activities-container {
     border-radius: 4px;
     background: #C3CDBA;
@@ -619,16 +648,5 @@ span.gite-tarif-weekend::after {
     background: #49524E;
     width: 100%;
     height: 70px;
-  }
-}
-
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.45rem;
   }
 }

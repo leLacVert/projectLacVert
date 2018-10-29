@@ -14,7 +14,6 @@ h1, h2 {
   font-family: "Mali", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
   margin: 0 auto 1rem;
-  padding-top: 1rem;
   color: #333;
 }
 
@@ -64,12 +63,12 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 0 100px;
   width: 100%;
   height: 200px;
   box-sizing: border-box;
   background: url("./../img/header_banner.jpg") no-repeat center;
   background-size: cover;
+  margin-bottom: 2rem;
 }
 header .logo img {
   position: absolute;
@@ -139,7 +138,7 @@ nav ul li a .active {
   top: 0.5rem;
   right: 1rem;
   width: 45px;
-  line-height: 45px;
+  height: 45px;
   text-align: center;
   font-size: 2rem;
   cursor: pointer;
@@ -246,7 +245,7 @@ nav ul li a .active {
 
 @media (min-width: 576px) {
   #gitePage .jumbotron {
-    background: #C3CDBA;
+    background: #e9ecef;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -369,7 +368,7 @@ td {
   color: #ccc;
   background-color: transparent;
   padding: 0em 1.5em;
-  color: red;
+  color: #333;
   font-size: x-large;
 }
 
@@ -446,7 +445,14 @@ p.text-accueil {
 
 .jumbotron {
   padding: 2rem 2rem;
-  margin-top: 1rem;
+}
+.jumbotron h1 {
+  font-size: 1.35rem;
+}
+.jumbotron h1 span {
+  display: block;
+  font-size: 1.15rem;
+  font-style: italic;
 }
 
 .jumbotron img {
@@ -610,7 +616,7 @@ section.activities-container h2 {
 }
 
 .gite-row {
-  padding: 10px 10px 0 10px;
+  padding: 1rem;
   background: #fff;
   margin: 0 auto;
   border-radius: 4px;
@@ -862,6 +868,13 @@ span.gite-tarif-weekend::after {
     font-size: 0.9em;
   }
 
+  .jumbotron h1 {
+    font-size: 1.5rem;
+  }
+  .jumbotron h1 span {
+    font-size: 1.25rem;
+  }
+
   .gite-element-head {
     line-height: 20px;
     font-weight: bold;
@@ -890,9 +903,23 @@ span.gite-tarif-weekend::after {
     padding: 0 7px;
     float: right;
   }
+
+  .jumbotron h1 {
+    font-size: 1.6rem;
+  }
+  .jumbotron h1 span {
+    font-size: 1.35rem;
+  }
 }
 /****** Large devices (desktops, 992px and up) ******/
 @media (min-width: 992px) {
+  .jumbotron h1 {
+    font-size: 1.75rem;
+  }
+  .jumbotron h1 span {
+    font-size: 1.5rem;
+  }
+
   section.activities-container {
     border-radius: 4px;
     background: #C3CDBA;
@@ -1014,20 +1041,12 @@ span.gite-tarif-weekend::after {
     height: 70px;
   }
 }
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.45rem;
-  }
-}
 footer {
   background: #404746;
   width: 100%;
   padding-bottom: 30px;
   padding-top: 30px;
+  margin-top: 2rem;
 }
 
 footer i {
