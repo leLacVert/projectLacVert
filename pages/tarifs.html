@@ -16,7 +16,7 @@
 
 <body>
 <header>
-  <div class="logo"><img src="./../assets/img/logoLacVert.png" alt="logoLacVert"></div>
+<div class="logo"><a href="../index.html"><img src="./../assets/img/logoLacVert.png" alt="logoLacVert"></a></div>
   <nav>
     <ul>
       <li><a href="../index.html">Accueil</a></li>
@@ -305,8 +305,8 @@
 
 <footer id="wg-footer">
   <div class="container">
-    <div class="container-fluid">
-      <div id="accordion">
+    <div class="row">
+      <div id="accordion" class="col-12 col-lg-6">
         <div class="card menuF">
           <div class="card-header">
             <a href="../index.html">Accueil</a>
@@ -322,13 +322,13 @@
                 <a href="gitePage.html">
                   <li>Présentation de nos gîtes</li>
                 </a>
-                <a href="gite2p1.html">
+                <a href="gite2p3.html">
                   <li>Babe</li>
                 </a>
                 <a href="gite2p2.html">
                   <li>Garfield</li>
                 </a>
-                <a href="gite2p3.html">
+                <a href="gite2p1.html">
                   <li>Idéfix</li>
                 </a>
                 <a href="gite4p1.html">
@@ -373,46 +373,45 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class=" wg-creditCard row">
-          <div class=" containerI col-12 col-md-3 text-center">
-            <i class="fab fa-cc-paypal fa-2x"></i>
-            <i class="fab fa-cc-visa fa-2x"></i>
-            <i class="fab fa-cc-amex fa-2x"></i>
-            <i class="fab fa-cc-mastercard fa-2x"></i>
-          </div>
-          <div class="col-4 col-md-3">
-            <p><a href="mentions.html">Mentions Légales</a><br>
-              <a onclick="openModal()" href="#">Newsletter</a></p>
-          </div>
-          <div class="col-4 col-md-3">
-            <p>Copyright 2018</p>
-          </div>
-          <div class="col-4 col-md-3">
-            <i class=" wg-facebook fab fa-facebook-square fa-2x"></i>
-          </div>
+      <div class="col-12 col-lg-6 wg-creditCard text-center">
+        <div class="col-lg-12 containerI">
+          <i class="fab fa-cc-paypal fa-2x"></i>
+          <i class="fab fa-cc-visa fa-2x"></i>
+          <i class="fab fa-cc-amex fa-2x"></i>
+          <i class="fab fa-cc-mastercard fa-2x"></i>
+        </div>
+        <div class="col-lg-12">
+          <p><a href="mentions.html">Mentions Légales</a><br>
+            <a onclick="openModal()" href="#">Newsletter</a></p>
+        </div>
+        <div class="col-lg-12">
+          <p>Copyright 2018</p>
+        </div>
+        <div class="col-lg-12">
+          <i class=" wg-facebook fab fa-facebook-square fa-2x"></i>
         </div>
       </div>
-      <div class="col-12" id="modal">
-        <form>
-          <h1>Newsletter</h1>
-          <div class="wg-info">
-            <div>
-              <input type="radio" id="scales" name="feature" value="oui" />
-              <label for="scales">Oui</label>
-            </div>
-            <div>
-              <input type="radio" id="scales" name="feature" value="non" checked />
-              <label for="scales">Non</label>
-            </div>
-            <input id="inputName" type="text" placeholder="Nom">
-            <input id="inputMail" type="email" placeholder="Adresse mail">
-          </div>
-          <input onclick="closeModal()" type="submit" value="Envoyez">
-          <button id="close" onclick="closeModal()">X</button>
-        </form>
-      </div>
     </div>
+  </div>
+  <div class="col-12" id="modalP">
+    <form>
+      <h1>Newsletter</h1>
+      <div class="wg-info">
+        <div>
+          <input type="radio" id="scales" name="feature" value="oui" />
+          <label for="scales">Oui</label>
+        </div>
+        <div>
+          <input type="radio" id="scales" name="feature" value="non" checked />
+          <label for="scales">Non</label>
+        </div>
+        <input id="inputName" type="text" placeholder="Nom">
+        <input id="inputMail" type="email" placeholder="Adresse mail">
+      </div>
+      <input onclick="closeModal()" type="submit" value="Envoyez">
+      <button id="close" onclick="closeModal()">X</button>
+    </form>
+  </div>
 </footer>
 
 

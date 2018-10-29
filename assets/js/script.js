@@ -18,6 +18,13 @@ $(document).ready(function () {
 	})
 })
 
+function openModal() {
+	document.getElementById("modalP").style.display = "block";
+}
+function closeModal() {
+	document.getElementById("modalP").style.display = "none";
+}
+
 var galerie = document.querySelector('.pg-galerie');
 var galerieObjet = document.querySelectorAll('.pg-galerie-objet');
 var numOfItems = galerie.children.length;
@@ -103,62 +110,62 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 
 	if (pageName[0].classList.contains('gite2p1')) {
 		var images = [
-			'./assets/img/gite2p1/gite2p1.jpg',
-			'./assets/img/gite2p1/chambre.jpg',
-			'./assets/img/gite2p1/cuisine.jpg',
-			'./assets/img/gite2p1/sdb.jpg',
-			'./assets/img/gite2p1/sejour.jpg'
+			'./../assets/img/gite2p1/gite2p1.jpg',
+			'./../assets/img/gite2p1/chambre.jpg',
+			'./../assets/img/gite2p1/cuisine.jpg',
+			'./../assets/img/gite2p1/sdb.jpg',
+			'./../assets/img/gite2p1/sejour.jpg'
 		];
 	} else if (pageName[0].classList.contains('gite2p2')) {
 		var images = [
-			'./assets/img/gite2p2/gite2p2.jpg',
-			'./assets/img/gite2p2/chambre.jpg',
-			'./assets/img/gite2p2/cuisine.jpg',
-			'./assets/img/gite2p2/sdb.jpg',
-			'./assets/img/gite2p2/sejour.jpg'
+			'./../assets/img/gite2p2/gite2p2.jpg',
+			'./../assets/img/gite2p2/chambre.jpg',
+			'./../assets/img/gite2p2/cuisine.jpg',
+			'./../assets/img/gite2p2/sdb.jpg',
+			'./../assets/img/gite2p2/sejour.jpg'
 		];
 	} else if (pageName[0].classList.contains('gite2p3')) {
 		var images = [
-			'./assets/img/gite2p3/gite2p3.jpg',
-			'./assets/img/gite2p3/chambre.jpg',
-			'./assets/img/gite2p3/cuisine.jpg',
-			'./assets/img/gite2p3/sdb.jpg',
-			'./assets/img/gite2p3/sejour.jpg'
+			'./../assets/img/gite2p3/gite2p3.jpg',
+			'./../assets/img/gite2p3/chambre.jpg',
+			'./../assets/img/gite2p3/cuisine.jpg',
+			'./../assets/img/gite2p3/sdb.jpg',
+			'./../assets/img/gite2p3/sejour.jpg'
 		];
 	} else if (pageName[0].classList.contains('gite4p1')) {
 		var images = [
-			'./assets/img/gite4p1/gite4p1.jpg',
-			'./assets/img/gite4p1/chambre1.jpg',
-			'./assets/img/gite4p1/chambre2.jpg',
-			'./assets/img/gite4p1/cuisine.jpg',
-			'./assets/img/gite4p1/sdb.jpg',
-			'./assets/img/gite4p1/sdb2.jpg',
-			'./assets/img/gite4p1/sejour.jpg'
+			'./../assets/img/gite4p1/gite4p1.jpg',
+			'./../assets/img/gite4p1/chambre1.jpg',
+			'./../assets/img/gite4p1/chambre2.jpg',
+			'./../assets/img/gite4p1/cuisine.jpg',
+			'./../assets/img/gite4p1/sdb.jpg',
+			'./../assets/img/gite4p1/sdb2.jpg',
+			'./../assets/img/gite4p1/sejour.jpg'
 		];
 	} else if (pageName[0].classList.contains('gite4p2')) {
 		var images = [
-			'./assets/img/gite4p2/gite4p2.jpg',
-			'./assets/img/gite4p2/chambre1.jpg',
-			'./assets/img/gite4p2/chambre2.jpg',
-			'./assets/img/gite4p2/cuisine.jpg',
-			'./assets/img/gite4p2/sdb.jpg',
-			'./assets/img/gite4p2/sejour.jpg'
+			'./../assets/img/gite4p2/gite4p2.jpg',
+			'./../assets/img/gite4p2/chambre1.jpg',
+			'./../assets/img/gite4p2/chambre2.jpg',
+			'./../assets/img/gite4p2/cuisine.jpg',
+			'./../assets/img/gite4p2/sdb.jpg',
+			'./../assets/img/gite4p2/sejour.jpg'
 		];
 	} else if (pageName[0].classList.contains('gite6p')) {
 		var images = [
-			'./assets/img/gite6p/gite6.jpg',
-			'./assets/img/gite6p/chambre1.jpg',
-			'./assets/img/gite6p/chambre2.jpg',
-			'./assets/img/gite6p/chambre3.jpg',
-			'./assets/img/gite6p/cuisine.jpg',
-			'./assets/img/gite6p/cuisine2.jpg',
-			'./assets/img/gite6p/cuisine3.jpg',
-			'./assets/img/gite6p/hangar.jpg',
-			'./assets/img/gite6p/piscine.jpg',
-			'./assets/img/gite6p/sdb.jpg',
-			'./assets/img/gite6p/sdb2.jpg',
-			'./assets/img/gite6p/sejour.jpg',
-			'./assets/img/gite6p/sejour2.jpg'
+			'./../assets/img/gite6p/gite6.jpg',
+			'./../assets/img/gite6p/chambre1.jpg',
+			'./../assets/img/gite6p/chambre2.jpg',
+			'./../assets/img/gite6p/chambre3.jpg',
+			'./../assets/img/gite6p/cuisine.jpg',
+			'./../assets/img/gite6p/cuisine2.jpg',
+			'./../assets/img/gite6p/cuisine3.jpg',
+			'./../assets/img/gite6p/hangar.jpg',
+			'./../assets/img/gite6p/piscine.jpg',
+			'./../assets/img/gite6p/sdb.jpg',
+			'./../assets/img/gite6p/sdb2.jpg',
+			'./../assets/img/gite6p/sejour.jpg',
+			'./../assets/img/gite6p/sejour2.jpg'
 		];
 	}
 	//initialisation 

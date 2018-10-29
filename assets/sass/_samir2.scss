@@ -1,412 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-body {
-  font-size: 14px;
-  font-family: "K2D", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-h1, h2 {
-  font-family: "Mali", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-  margin: 0 auto 1rem;
-  padding-top: 1rem;
-  color: #333;
-}
-
-.container-fluid {
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: 576px) {
-  h1 {
-    font-size: 1.15rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  h2 {
-    font-size: 1.15rem;
-  }
-}
-@media (min-width: 992px) {
-  h1 {
-    font-size: 1.45rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.45rem;
-  }
-}
-header {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0 100px;
-  width: 100%;
-  height: 200px;
-  box-sizing: border-box;
-  background: url("./../img/header_banner.jpg") no-repeat center;
-  background-size: cover;
-}
-header .logo img {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 120px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-nav ul li.active ul {
-  position: absolute;
-  display: block;
-  opacity: 1;
-  background: #6182B2;
-  color: #999;
-  width: max-content;
-  z-index: 2;
-}
-nav ul li {
-  list-style: none;
-  position: relative;
-}
-nav ul li i {
-  line-height: auto;
-  margin-left: 0.25rem;
-}
-nav ul li ul {
-  position: absolute;
-  display: block;
-  width: max-content;
-  transition: 0.75s linear;
-  opacity: 0;
-}
-nav ul li ul li {
-  width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-nav ul li a {
-  height: 50px;
-  font-size: 1.5rem;
-  line-height: 50px;
-  padding: 0 20px;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
-}
-nav ul li a:hover,
-nav ul li a .active {
-  color: #333;
-  background: #A5D0B6;
-}
-
-#menu-toggle {
-  position: absolute;
-  background: #333;
-  color: #fff;
-  top: 0.5rem;
-  right: 1rem;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  display: none;
-}
-
-@media (max-width: 767px) {
-  header {
-    background: url("./../img/header_banner-mobil.jpg") no-repeat center;
-    height: 150px;
-  }
-  header .logo img {
-    width: 60px;
-    top: 0.5rem;
-  }
-
-  nav {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 50px);
-    background: #333;
-    top: 50px;
-    left: -100%;
-    transition: 0.75s ease-in;
-  }
-  nav ul {
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
-  nav ul li.active ul {
-    position: relative;
-    width: 100%;
-    background: #6182B2;
-    color: #999;
-  }
-  nav ul li ul {
-    width: 100%;
-  }
-  nav ul li a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  }
-
-  #menu-toggle {
-    display: block;
-  }
-
-  nav.active {
-    left: 0;
-    z-index: 2;
-  }
-}
-#gitePage {
-  padding-top: 1rem;
-}
-#gitePage h1 {
-  font-size: 2rem;
-}
-#gitePage .jumbotron {
-  display: contents;
-}
-#gitePage .jumbotron img {
-  margin-bottom: 1rem;
-  width: 100%;
-  border-radius: 0.3rem;
-}
-#gitePage .jumbotron .button_banner {
-  display: none;
-  margin: 1rem auto 0;
-}
-#gitePage .jumbotron h2 {
-  font-size: 1.75rem;
-  margin: 0;
-  padding: 0;
-}
-#gitePage .card {
-  text-align: center;
-  margin: 1rem 0.5rem;
-  border: 1px solid #A5D0B6;
-}
-#gitePage .card .card_img {
-  width: auto;
-  height: 200px;
-}
-#gitePage .card .card_button {
-  display: flex;
-  margin: 1rem auto;
-}
-#gitePage .card .card_button .btn {
-  margin: auto;
-}
-#gitePage .card h2 {
-  font-size: 1.75rem;
-  margin: 0 0 0.5rem 0;
-  padding: 0;
-}
-#gitePage .card p {
-  text-align: left;
-}
-#gitePage .card_small {
-  height: 700px;
-}
-
-@media (min-width: 576px) {
-  #gitePage .jumbotron {
-    background: #C3CDBA;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem 2rem;
-  }
-  #gitePage .jumbotron img {
-    width: 100%;
-    border-radius: 0.3rem;
-  }
-  #gitePage .jumbotron .button_banner {
-    display: block;
-    margin: 1rem auto 0;
-  }
-  #gitePage .jumbotron h2 {
-    font-size: 1.75rem;
-    margin: 0;
-    padding: 0;
-  }
-  #gitePage .card h2 {
-    margin-bottom: 1rem;
-  }
-  #gitePage .card_small {
-    height: 650px;
-  }
-}
-.actinfos table {
-  margin: auto;
-  border-collapse: collapse;
-}
-
-.actinfos table,
-th,
-tr,
-td {
-  border: 1px solid #c3cdba;
-  padding: 15px;
-}
-
-.actinfos td {
-  height: 40px;
-  vertical-align: center;
-  text-align: center;
-}
-
-.actinfos thead {
-  text-align: center;
-  font-weight: bold;
-  height: 40px;
-  background-color: #c3cdba;
-}
-
-/********* Page description Gite ***********/
-/****** Galerie ******/
-/* Classes utile */
-.pg-xy-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.pg-transition {
-  transition: all 350ms ease-in-out;
-}
-
-.pg-r-3-2 {
-  width: 100%;
-  padding-bottom: 66.667%;
-  /* background-color: #ddd;*/
-}
-
-.pg-image-holder {
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/* Styles principale */
-.pg-galerie-wrap {
-  position: relative;
-  overflow: hidden;
-  border: 2px ridge #CCC;
-}
-
-.pg-galerie {
-  position: relative;
-  white-space: nowrap;
-  font-size: 0;
-}
-
-.pg-objet-wrap {
-  cursor: pointer;
-  width: 23%;
-  /* valueur arbitraire */
-  display: inline-block;
-  /*background-color: white;*/
-}
-
-.pg-objet-wrap figure {
-  margin: 0 0 0;
-}
-
-.pg-galerie-objet {
-  opacity: 0.5;
-}
-
-.pg-galerie-objet.pg-active {
-  opacity: 1;
-}
-
-.pg-controle {
-  font-size: 0;
-  border-top: none;
-}
-
-.pg-move-btn {
-  display: inline-block;
-  width: 50%;
-  border: none;
-  color: #ccc;
-  background-color: transparent;
-  padding: 0em 1.5em;
-  color: red;
-  font-size: x-large;
-}
-
-.pg-move-btn:first-child {
-  border-right: none;
-}
-
-.pg-move-btn.pg-left {
-  cursor: w-resize;
-}
-
-.pg-move-btn.pg-right {
-  cursor: e-resize;
-}
-
-/****** Desciption ******/
-.pg-detail {
-  border: 1px solid black;
-}
-
-.pg-detail-p {
-  margin-bottom: 0;
-  margin-left: 3%;
-}
-
-.pg-detail-hr {
-  height: 1px;
-  color: black;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.pg-detail-p2 {
-  width: 95%;
-  margin: 0 auto;
-}
-
 p.text-accueil {
   font-size: 1.3em;
   padding: 0 5px;
@@ -436,19 +27,17 @@ p.text-accueil {
   line-height: var(--hauteur-bouton);
   padding: 0 7px;
   left: 10px;
-  transition: 0.2s linear;
+  transition: .2s linear;
 }
 
 .btn-accueil-gites:hover a i {
   opacity: 1;
   left: 15px;
 }
-
 .jumbotron {
   padding: 2rem 2rem;
   margin-top: 1rem;
 }
-
 .jumbotron img {
   width: 100%;
   margin: 10px auto;
@@ -489,19 +78,21 @@ section.activities-container h2 {
   background-repeat: no-repeat;
   font-size: 2.5em;
   color: #fff;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   height: 150px;
   line-height: 130px;
   background-size: cover;
   background-position: center;
-  transition: all 0.5s;
+  transition: all .5s;
 }
+
 
 .activite-element span {
   display: block;
   width: 100%;
   background: rgba(255, 255, 255, 0.3);
   text-align: center;
+
 }
 
 .activite-element-accrobranche .activite-inside-element {
@@ -585,6 +176,7 @@ section.activities-container h2 {
 
 .mentions-container {
   padding: 25px !important;
+
 }
 
 .mentions-container h1 {
@@ -608,7 +200,6 @@ section.activities-container h2 {
 .mentions-container p {
   color: #333;
 }
-
 .gite-row {
   padding: 10px 10px 0 10px;
   background: #fff;
@@ -621,7 +212,7 @@ section.activities-container h2 {
   text-align: center;
   line-height: 90px;
   font-weight: bold;
-  font-size: 0.95em;
+  font-size: .95em;
 }
 
 .gite-element-tab {
@@ -649,7 +240,7 @@ td {
 }
 
 .table {
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
 }
 
@@ -668,7 +259,7 @@ caption {
 }
 
 .pricing-table th {
-  font-size: 0.85em;
+  font-size: .85em;
 }
 
 .pricing-table .thead-dark th {
@@ -681,6 +272,7 @@ caption {
 .pricing-table td {
   border: 1px solid #395745 !important;
   text-align: center;
+
 }
 
 .pricing-table .td-gite {
@@ -697,6 +289,7 @@ caption {
   background-repeat: no-repeat;
   float: left;
   margin-right: 20px;
+
 }
 
 .pricing-table .gite-idefix:before {
@@ -747,7 +340,7 @@ span.gite-tarif-weekend::after {
   background-repeat: no-repeat;
   font-size: 2em;
   color: #fff;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   background-size: cover;
   background-position: center;
 }
@@ -780,7 +373,7 @@ span.gite-tarif-weekend::after {
   text-align: center;
   padding: 0 10px;
   width: 100%;
-  font-size: 0.7em;
+  font-size: .7em;
 }
 
 .gite-tarif-title span.gite-title {
@@ -829,6 +422,7 @@ span.gite-tarif-weekend::after {
     display: contents;
   }
 }
+
 /****** Smartphones M ******/
 @media (max-width: 375px) {
   .gite-tarif-title span.gite-title {
@@ -836,7 +430,7 @@ span.gite-tarif-weekend::after {
   }
 
   .pricing-table td {
-    font-size: 0.9em;
+    font-size: .9em;
     padding: 10px;
   }
 
@@ -849,17 +443,20 @@ span.gite-tarif-weekend::after {
   }
 
   .activite-element span {
-    font-size: 0.9em;
+    font-size: .9em;
     line-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
   }
 }
+
+
 /****** Smartphones L ******/
 @media (max-width: 425px) {
+
   .table-responsive {
-    font-size: 0.9em;
+    font-size: .9em;
   }
 
   .gite-element-head {
@@ -879,7 +476,9 @@ span.gite-tarif-weekend::after {
     float: right;
   }
 }
+
 @media (min-width: 768px) {
+
   .btn-accueil-gites a i {
     opacity: 1 !important;
     position: relative;
@@ -890,9 +489,13 @@ span.gite-tarif-weekend::after {
     padding: 0 7px;
     float: right;
   }
+
 }
+
 /****** Large devices (desktops, 992px and up) ******/
 @media (min-width: 992px) {
+
+
   section.activities-container {
     border-radius: 4px;
     background: #C3CDBA;
@@ -923,12 +526,12 @@ span.gite-tarif-weekend::after {
     background-repeat: no-repeat;
     font-size: 2.5em;
     color: #fff;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
     height: 150px;
     line-height: 130px;
     background-size: cover;
     background-position: center;
-    transition: all 0.5s;
+    transition: all .5s;
   }
 
   .activite-inside-element::before {
@@ -944,15 +547,16 @@ span.gite-tarif-weekend::after {
 
   .activite-inside-element span {
     display: none;
+
   }
 
   .activite-element:hover .activite-inside-element,
-.activite-element:focus .activite-inside-element {
+  .activite-element:focus .activite-inside-element {
     transform: scale(1.2);
   }
 
   .activite-element:hover .activite-inside-element:before,
-.activite-element:focus .activite-inside-element:before {
+  .activite-element:focus .activite-inside-element:before {
     display: block;
   }
 
@@ -961,6 +565,7 @@ span.gite-tarif-weekend::after {
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
     text-align: center;
+
   }
 
   .activite-element-accrobranche .activite-inside-element {
@@ -981,7 +586,9 @@ span.gite-tarif-weekend::after {
 
   .tarif-activite-element .activite-inside-element {
     background-size: cover;
+
   }
+
 
   .contact-element-container {
     margin: 5px auto;
@@ -1014,6 +621,8 @@ span.gite-tarif-weekend::after {
     height: 70px;
   }
 }
+
+
 @media (min-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -1023,200 +632,3 @@ span.gite-tarif-weekend::after {
     font-size: 1.45rem;
   }
 }
-footer {
-  background: #404746;
-  width: 100%;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-footer i {
-  color: #eee;
-}
-
-.wg-creditCard {
-  margin-top: 10px;
-}
-.wg-creditCard i {
-  font-size: 3rem;
-  cursor: pointer;
-}
-.wg-creditCard i:hover {
-  color: #A5D0B6;
-}
-.wg-creditCard a {
-  font-size: 1rem;
-}
-.wg-creditCard a:hover {
-  color: #A5D0B6;
-}
-
-.wg-creditCard div p {
-  font-size: 13px;
-  color: white;
-}
-
-.wg-creditCard div p a {
-  color: white;
-}
-
-.menuF a {
-  color: black;
-  display: block;
-  width: 100%;
-}
-
-.menuF2 a {
-  color: black;
-  display: block;
-  width: 100%;
-}
-
-.card-body {
-  padding: 0;
-}
-
-footer ul {
-  margin: 0;
-  padding: 0;
-}
-
-footer ul li {
-  margin-left: 10px;
-}
-
-footer ul a {
-  border-bottom: 1px solid #0286E7;
-}
-
-footer ul a:hover {
-  border-bottom: 1px solid #14bc03;
-  font-size: 20px;
-}
-
-.containerI {
-  margin-bottom: 5px;
-}
-
-footer form p {
-  margin: 0 0 15px 0;
-  padding: 0;
-  color: #555;
-  font-style: italic;
-  font-size: 14px;
-}
-
-footer form {
-  width: 428px;
-  margin: auto;
-  padding: 50px;
-  text-align: center;
-}
-
-#accordion {
-  width: 50%;
-}
-
-#modal input {
-  font-family: "PT Sans Narrow";
-  font-size: 20px;
-}
-
-.wg-info {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.wg-info input {
-  display: block;
-  width: 300px;
-  height: 20px;
-  border: 0;
-  border-radius: 3px;
-  margin: 0 0 10px 0;
-  padding: 12px 10px;
-  background: #fff;
-}
-
-.wg-info input {
-  display: block;
-  width: 300px;
-  height: 20px;
-  border: 0;
-  border-radius: 3px;
-  margin: 0 0 10px 0;
-  padding: 12px 10px;
-  background: #fff;
-}
-
-.wg-info-radio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.wg-info input[type=radio] {
-  color: white;
-  display: inline;
-  width: max-content;
-  margin: auto 1rem;
-}
-
-.wg-info input:last-child {
-  margin: 0;
-}
-
-.wg-info input:focus {
-  background: #eee;
-  outline: none;
-}
-
-#modalP input[type=submit] {
-  vertical-align: top;
-  height: 33px;
-  width: 96px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 3px;
-  background: #14bc03;
-  cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff;
-  margin-top: 30px;
-}
-
-#modalP input[type=submit]:hover {
-  background-color: #0286E7;
-}
-
-#modalP {
-  display: none;
-  width: 500px;
-  background-color: #F7F7F7;
-  color: black;
-  position: fixed;
-  left: 30%;
-  top: 30%;
-  border: 4px solid #0286E7;
-}
-
-#close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .wg-creditCard div p {
-    text-align: center;
-  }
-
-  footer .wg-creditCard i {
-    font-size: 40px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */

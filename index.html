@@ -19,7 +19,7 @@
 <body>
 
   <header>
-    <div class="logo"><img src="./assets/img/logoLacVert.png" alt="logoLacVert"></div>
+    <div class="logo"><a href="index.html"><img src="./assets/img/logoLacVert.png" alt="logoLacVert"></a></div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -49,7 +49,7 @@
   </header>
   <section id="main">
     <div class="container">
-      <div class="jumbotron ">
+      <div class="jumbotron">
         <h1>Le Lac Vert, Gites et Activit&eacute;s en plein nature.</h1>
         <!--img sizes="(min-width: 400px) 80vw, 100vw"
            srcset="./assets/img/samples/banner-375-white.png 375w, ./assets/img/samples/banner-white.png 1500w"
@@ -59,11 +59,11 @@
           <source srcset="./assets/img/home-banner-tablet.jpg" media="(min-width: 768px)">
           <img srcset="./assets/img/home-banner-mobile.jpg" alt="…">
         </picture>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid consequuntur debitis dicta fuga
-          pariatur. Architecto deserunt dolore dolores fuga harum ipsum iusto placeat quam quas rem sequi, suscipit
-          voluptatibus.</p>
+        <p class="text-accueil">Bienvenue au gîte du Lac Vert autour du majestueux lac "Le Simplonien", un endroit
+          idyllique où
+          il fait bon vivre, se reposer et exercer des activités en plein nature seul ou en groupe.</p>
         <div class="col-md-6 mb-4 btn-accueil-gites">
-          <a href="page/gitePage.html">
+          <a href="pages/gitePage.html">
             Découvrez tous nos gites <i class="fas fa-arrow-right"></i>
           </a>
 
@@ -71,26 +71,26 @@
       </div>
       <section class="activities-container">
         <h2>Nos activit&eacute;s</h2>
-        <div class="container">
+        <div class="container mb-4">
           <div class="row">
             <div class="col-sm activite-element activite-element-accrobranche">
-              <a href="./pages/activite-accrobranche.html" title="Activit&eacute; Accrobranche">
+              <a href="./pages/accrobranche.html" title="Activit&eacute; Accrobranche">
                 <div class="activite-inside-element">
                   <span>Accrobranche</span>
                 </div>
               </a>
             </div>
             <div class="col-sm activite-element activite-element-escalade">
-              <a href="./pages/activite-escalade.html" title="Activit&eacute; Escalade">
+              <a href="./pages/escalade.html" title="Activit&eacute; Escalade">
                 <div class="activite-inside-element">
                   <span>Escalade</span>
                 </div>
               </a>
             </div>
           </div>
-          <div class="row">
+          <div class="row pb-3">
             <div class="col-sm activite-element activite-element-pedalo">
-              <a href="./pages/activite-pedalo.html" title="Activit&eacute; P&eacute;dalo">
+              <a href="./pages/pedalo.html" title="Activit&eacute; P&eacute;dalo">
                 <div class="activite-inside-element">
                   <span>P&eacute;dalo</span>
                 </div>
@@ -98,7 +98,7 @@
 
             </div>
             <div class="col-sm activite-element activite-element-ferme">
-              <a href="./pages/activite-ferme-pedagogique.html" title="Activit&eacute; Ferme P&eacute;dagogique">
+              <a href="./pages/ferme.html" title="Activit&eacute; Ferme P&eacute;dagogique">
                 <div class="activite-inside-element">
                   <span>Ferme P&eacute;dagogique</span>
                 </div>
@@ -112,8 +112,8 @@
 
   <footer id="wg-footer">
     <div class="container">
-      <div class="container-fluid">
-        <div id="accordion">
+      <div class="row">
+        <div id="accordion" class="col-12 col-lg-6">
           <div class="card menuF">
             <div class="card-header">
               <a href="index.html">Accueil</a>
@@ -129,13 +129,13 @@
                   <a href="./pages/gitePage.html">
                     <li>Présentation de nos gîtes</li>
                   </a>
-                  <a href="./pages/gite2p1.html">
+                  <a href="./pages/gite2p3.html">
                     <li>Babe</li>
                   </a>
                   <a href="./pages/gite2p2.html">
                     <li>Garfield</li>
                   </a>
-                  <a href="./pages/gite2p3.html">
+                  <a href="./pages/gite2p1.html">
                     <li>Idéfix</li>
                   </a>
                   <a href="./pages/gite4p1.html">
@@ -180,53 +180,88 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class=" wg-creditCard row">
-            <div class=" containerI col-12 col-md-3 text-center">
-              <i class="fab fa-cc-paypal fa-2x"></i>
-              <i class="fab fa-cc-visa fa-2x"></i>
-              <i class="fab fa-cc-amex fa-2x"></i>
-              <i class="fab fa-cc-mastercard fa-2x"></i>
-            </div>
-            <div class="col-4 col-md-3">
-              <p><a href="./pages/mentions.html">Mentions Légales</a><br>
-                <a onclick="openModal()" href="#">Newsletter</a></p>
-            </div>
-            <div class="col-4 col-md-3">
-              <p>Copyright 2018</p>
-            </div>
-            <div class="col-4 col-md-3">
-              <i class=" wg-facebook fab fa-facebook-square fa-2x"></i>
-            </div>
+        <div class="col-12 col-lg-6 wg-creditCard text-center">
+          <div class="col-lg-12 containerI">
+            <i class="fab fa-cc-paypal fa-2x"></i>
+            <i class="fab fa-cc-visa fa-2x"></i>
+            <i class="fab fa-cc-amex fa-2x"></i>
+            <i class="fab fa-cc-mastercard fa-2x"></i>
+          </div>
+          <div class="col-lg-12">
+            <p><a href="./pages/mentions.html">Mentions Légales</a><br>
+              <a onclick="openModal()" href="#">Newsletter</a></p>
+          </div>
+          <div class="col-lg-12">
+            <i class=" wg-facebook fab fa-facebook-square fa-2x"></i>
+          </div>
+          <div class="col-lg-12">
+            <p>&copyLe lac vert, 2018</p>
           </div>
         </div>
-        <div class="col-12" id="modal">
-          <form>
-            <h1>Newsletter</h1>
-            <div class="wg-info">
-              <div>
-                <input type="radio" id="scales" name="feature" value="oui" />
-                <label for="scales">Oui</label>
-              </div>
-              <div>
-                <input type="radio" id="scales" name="feature" value="non" checked />
-                <label for="scales">Non</label>
-              </div>
-              <input id="inputName" type="text" placeholder="Nom">
-              <input id="inputMail" type="email" placeholder="Adresse mail">
-            </div>
-            <input onclick="closeModal()" type="submit" value="Envoyez">
-            <button id="close" onclick="closeModal()">X</button>
-          </form>
-        </div>
       </div>
+    </div>
+    <div class="col-12" id="modalP">
+      <form>
+        <h1>Newsletter</h1>
+        <div class="wg-info">
+          <div class="wg-info-radio">
+            <input type="radio" id="scales" name="feature" value="oui" />
+            <label for="scales">Oui</label>
+
+            <input type="radio" id="scales" name="feature" value="non" checked />
+            <label for="scales">Non</label>
+          </div>
+          <input id="inputName" type="text" placeholder="Nom">
+          <input id="inputMail" type="email" placeholder="Adresse mail">
+        </div>
+        <input onclick="closeModal()" type="submit" value="Envoyez">
+        <button id="close" onclick="closeModal()">X</button>
+      </form>
+    </div>
   </footer>
 
 
   <!-- Optional JavaScript -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="./assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
-<script src="./assets/js/script.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Le lac vert",
+      "image": "www.lelacvert.com/assets/img/lelacvert.jpg",
+      "@id": "",
+      "url": "www.lelacvert.com",
+      "telephone": "+33322446688",
+      "priceRange": "€€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue des carreaux",
+        "addressLocality": "Boulogne sur mer",
+        "postalCode": "62200",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.7254885,
+        "longitude": 1.6079219000000649
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 

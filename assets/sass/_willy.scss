@@ -11,6 +11,19 @@ footer i {
 
 .wg-creditCard {
   margin-top: 10px;
+  i {
+    font-size: 3rem;
+    cursor: pointer;
+    &:hover {
+      color: $vertgris;
+    }
+  }
+  a {
+    font-size: 1rem;
+    &:hover {
+      color: $vertgris;
+    }
+  }
 }
 
 .wg-creditCard div p {
@@ -72,6 +85,7 @@ footer form {
   width: 428px;
   margin: auto;
   padding: 50px;
+  text-align: center;
 }
 
 #accordion {
@@ -110,12 +124,17 @@ footer form {
   background: #fff;
 }
 
-.wg-info input[type=radio] {
-  display: block;
-  display: inline;
-  width: 50px;
-  color: white;
+.wg-info-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.wg-info input[type=radio] {
+  color: white;
+  display: inline;
+  width: max-content;
+  margin: auto 1rem;
 }
 
 .wg-info input:last-child {
@@ -127,7 +146,7 @@ footer form {
   outline: none;
 }
 
-#modal input[type="submit"] {
+#modalP input[type="submit"] {
   vertical-align: top;
   height: 33px;
   width: 96px;
@@ -143,18 +162,18 @@ footer form {
   margin-top: 30px;
 }
 
-#modal input[type="submit"]:hover {
+#modalP input[type="submit"]:hover {
   background-color: #0286E7;
 }
 
-#modal {
+#modalP {
   display: none;
   width: 500px;
   background-color: #F7F7F7;
   color: black;
   position: fixed;
-  left: 25%;
-  top: 25%;
+  left: 30%;
+  top: 30%;
   border: 4px solid #0286E7;
 }
 
@@ -162,4 +181,15 @@ footer form {
   position: absolute;
   top: 5px;
   right: 5px
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wg-creditCard div p {
+    text-align: center;
+  }
+
+  footer .wg-creditCard i {
+    font-size: 40px;
+  }
 }
