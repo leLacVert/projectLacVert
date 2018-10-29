@@ -1,15 +1,20 @@
 header {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding: 0 100px;
   width: 100%;
+  height: 200px;
   box-sizing: border-box;
-  background: url('./../img/banner2.jpg') no-repeat center;
+  background: url('./../img/header_banner.jpg') no-repeat center;
+  background-size: cover;
 
   .logo img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     height: 100px;
-    float: left;
   }
 }
 
@@ -23,10 +28,11 @@ nav {
     display: flex;
 
     li.active ul {
-      position: relative;
+      position: absolute;
       display: block;
       opacity: 1;
-      background: greenyellow;
+      background: #6182B2;
+      color: #999;
       width: max-content;
     }
 
@@ -42,28 +48,30 @@ nav {
       ul {
         position: absolute;
         display: block;
-        background: greenyellow;
         width: max-content;
         transition: .75s linear;
         opacity: 0;
 
         li {
           width: 100%;
+          border-bottom: 1px solid rgba($color: #000, $alpha: 0.3);
         }
       }
 
       a {
         height: 50px;
+        font-size: 1.5rem;
         line-height: 50px;
         padding: 0 20px;
-        color: orangered;
+        color: #fff;;
         text-decoration: none;
         display: block;
+        border-radius: .3rem;
 
         &:hover,
         .active {
           color: #333;
-          background: red;
+          background: $vertgris;
         }
       }
     }
@@ -71,18 +79,28 @@ nav {
 }
 
 #menu-toggle {
+  position: absolute;
+  background: #333;
   color: #fff;
-  float: right;
-  line-height: 50px;
+  top: .5rem;
+  right: 1rem;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
   font-size: 2rem;
   cursor: pointer;
+  border-radius: .3rem;
   display: none;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   header {
-    padding: 0 2rem;
+    background: url('./../img/header_banner-mobil.jpg') no-repeat center;
+    height: 150px;
+    .logo img {
+      height: 50px;
+      top: .5rem;
+    }
   }
 
   nav {
@@ -97,8 +115,17 @@ nav {
     ul {
       display: block;
       text-align: center;
-
+      width: 100%;
+      li.active ul {
+        position: relative;
+        width: 100%;
+        background: #6182B2;
+        color: #999;
+      }
       li {
+        ul {
+          width: 100%;
+        }
         a {
           border-bottom: 1px solid rgba(0, 0, 0, 0.5);
         }
@@ -112,5 +139,6 @@ nav {
 
   nav.active {
     left: 0;
+    z-index: 2;
   }
 }
