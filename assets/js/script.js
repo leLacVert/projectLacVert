@@ -14,16 +14,16 @@ var scrollRate = 0.2;
 var left;
 
 function selectObjet(e) {
-	if (e.target.classList.contains('active')) return;
-	
+	if (e.target.classList.contains('pg-active')) return;
+
 	featured.style.backgroundImage = e.target.style.backgroundImage;
-	
+
 	for (var i = 0; i < galerieObjet.length; i++) {
-		if (galerieObjet[i].classList.contains('active'))
-			galerieObjet[i].classList.remove('active');
+		if (galerieObjet[i].classList.contains('pg-active'))
+			galerieObjet[i].classList.remove('pg-active');
 	}
-	
-	e.target.classList.add('active');
+
+	e.target.classList.add('pg-active');
 }
 
 function galerieWrapLeft() {
@@ -44,7 +44,7 @@ function galerieWrapRight() {
 function moveLeft() {
 	left = left || 0;
 
-	leftInterval = setInterval(function() {
+	leftInterval = setInterval(function () {
 		galerie.style.left = left + '%';
 
 		if (left > -objetWidth) {
@@ -59,17 +59,17 @@ function moveLeft() {
 function moveRight() {
 	//etre sure qu'il y a un élément a d
 	if (left > -objetWidth && left < 0) {
-		left = left  - objetWidth;
-		
+		left = left - objetWidth;
+
 		var last = galerie.children[galerie.children.length - 1];
 		galerie.removeChild(last);
 		galerie.style.left = left + '%';
-		galerie.insertBefore(last, galerie.children[0]);	
+		galerie.insertBefore(last, galerie.children[0]);
 	}
-	
+
 	left = left || 0;
 
-	leftInterval = setInterval(function() {
+	leftInterval = setInterval(function () {
 		galerie.style.left = left + '%';
 
 		if (left < 0) {
@@ -94,17 +94,71 @@ rightBtn.addEventListener('mouseleave', stopMouvement);
 
 //Start
 (function init() {
-	var images = [
-		'./assets/img/gite2p1/gite2p1.jpg',
-		'./assets/img/gite2p1/chambre.jpg',
-		'./assets/img/gite2p1/cuisine.jpg',
-		'./assets/img/gite2p1/sdb.jpg',
-		'./assets/img/gite2p1/sejour.jpg'
-	];
+	var pageName = document.getElementsByTagName('body');
 	
+	if (pageName[0].classList.contains('gite2p1')) {
+		var images = [
+			'./assets/img/gite2p1/gite2p1.jpg',
+			'./assets/img/gite2p1/chambre.jpg',
+			'./assets/img/gite2p1/cuisine.jpg',
+			'./assets/img/gite2p1/sdb.jpg',
+			'./assets/img/gite2p1/sejour.jpg'
+		];
+	} else if (pageName[0].classList.contains('gite2p2')) {
+		var images = [
+			'./assets/img/gite2p2/gite2p2.jpg',
+			'./assets/img/gite2p2/chambre.jpg',
+			'./assets/img/gite2p2/cuisine.jpg',
+			'./assets/img/gite2p2/sdb.jpg',
+			'./assets/img/gite2p2/sejour.jpg'
+		];
+	}else if (pageName[0].classList.contains('gite2p3')) {
+		var images = [
+			'./assets/img/gite2p3/gite2p3.jpg',
+			'./assets/img/gite2p3/chambre.jpg',
+			'./assets/img/gite2p3/cuisine.jpg',
+			'./assets/img/gite2p3/sdb.jpg',
+			'./assets/img/gite2p3/sejour.jpg'
+		];
+	}else if (pageName[0].classList.contains('gite4p1')) {
+		var images = [
+			'./assets/img/gite4p1/gite4p1.jpg',
+			'./assets/img/gite4p1/chambre1.jpg',
+			'./assets/img/gite4p1/chambre2.jpg',
+			'./assets/img/gite4p1/cuisine.jpg',
+			'./assets/img/gite4p1/sdb.jpg',
+			'./assets/img/gite4p1/sdb2.jpg',
+			'./assets/img/gite4p1/sejour.jpg'
+		];
+	}else if (pageName[0].classList.contains('gite4p2')) {
+		var images = [
+			'./assets/img/gite4p2/gite4p2.jpg',
+			'./assets/img/gite4p2/chambre1.jpg',
+			'./assets/img/gite4p2/chambre2.jpg',
+			'./assets/img/gite4p2/cuisine.jpg',
+			'./assets/img/gite4p2/sdb.jpg',
+			'./assets/img/gite4p2/sejour.jpg'
+		];
+	}else if (pageName[0].classList.contains('gite6p')) {
+		var images = [
+			'./assets/img/gite6p/gite6.jpg',
+			'./assets/img/gite6p/chambre1.jpg',
+			'./assets/img/gite6p/chambre2.jpg',
+			'./assets/img/gite6p/chambre3.jpg',
+			'./assets/img/gite6p/cuisine.jpg',
+			'./assets/img/gite6p/cuisine2.jpg', 
+			'./assets/img/gite6p/cuisine3.jpg',
+			'./assets/img/gite6p/hangar.jpg',
+			'./assets/img/gite6p/piscine.jpg',
+			'./assets/img/gite6p/sdb.jpg',
+			'./assets/img/gite6p/sdb2.jpg',
+			'./assets/img/gite6p/sejour.jpg',
+			'./assets/img/gite6p/sejour2.jpg'
+		];
+	}
 	//initialisation 
 	featured.style.backgroundImage = 'url(' + images[0] + ')';
-	
+
 	//modif img et addListener
 	for (var i = 0; i < galerieObjet.length; i++) {
 		galerieObjet[i].style.backgroundImage = 'url(' + images[i] + ')';
