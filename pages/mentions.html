@@ -16,37 +16,35 @@
 </head>
 
 <body>
-  <header id="home" class="container-fluid">
-    <img src="./../assets/img/logoLacVert.png" class="header_logo" alt="logo le lac vert">
-    <nav class="container">
-      <div class="link">
-        <a href="../index.html">Accueil</a>
-      </div>
-      <div class="link">
-        <a href="">Activit&eacute;s</a>
-        <div class="nav_up">
-          <a href="activite-accrobranche.html"><i class="fas fa-chevron-right"></i>Accrobranche</a>
-          <a href="activite-escalade.html"><i class="fas fa-chevron-right"></i>Escalade</a>
-          <a href="activite-ferme-pedagogique.html"><i class="fas fa-chevron-right"></i>Ferme pédagogique</a>
-          <a href="activite-pedalo.html"><i class="fas fa-chevron-right"></i>Pédalo</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="gitePage.html">G&icirc;tes</a>
-        <div class="nav_up">
-          <a href="gite-babe.html"><i class="fas fa-chevron-right"></i>babe</a>
-          <a href="gite-garfiels.html"><i class="fas fa-chevron-right"></i>Garfield</a>
-          <a href="gite-idefix.html"><i class="fas fa-chevron-right"></i>Idéfix</a>
-          <a href="gite-jolly-jumper.html"><i class="fas fa-chevron-right"></i>Jolly Jumper</a>
-          <a href="gite-saturnin.html"><i class="fas fa-chevron-right"></i>Saturnin</a>
-          <a href="gite-tornado.html"><i class="fas fa-chevron-right"></i>Tornado</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="tarifs.html">Tarifs</a>
-      </div>
-    </nav>
-  </header>
+<header>
+  <div class="logo"><img src="./../assets/img/logoLacVert.png" alt="logoLacVert"></div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="#" class="sub-menu">Activité<i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="accrobranche.html">Accrobranche</a></li>
+          <li><a href="escalade.html">Escalade</a></li>
+          <li><a href="ferme.html">Ferme pédagogique</a></li>
+          <li><a href="pedalo.html">Pédalo</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="sub-menu">Gîtes<i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="gitePage.html">Tous les gîtes</a></li>
+          <li><a href="gite2p3.html">Babe</a></li>
+          <li><a href="gite2p2.html">Garfield</a></li>
+          <li><a href="gite2p1.html">Idéfix</a></li>
+          <li><a href="gite4p1.html">Saturnin</a></li>
+          <li><a href="gite4p2.html">Jolly Jumper</a></li>
+          <li><a href="gite6p.html">Tornado</a></li>
+        </ul>
+      </li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+    </ul>
+  </nav>
+  <div id="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
+</header>
   <section id="main">
     <div class="container">
       <div class="jumbotron mentions-container">
@@ -235,18 +233,124 @@
       </div>
     </div>
   </section>
-  <div class="pre-footer">
 
-  </div>
-  <footer>
-
-  </footer>
+<footer id="wg-footer">
+  <div class="container">
+    <div class="container-fluid">
+      <div id="accordion">
+        <div class="card menuF">
+          <div class="card-header">
+            <a href="../index.html">Accueil</a>
+          </div>
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              Nos Gîtes
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <a href="gitePage.html">
+                  <li>Présentation de nos gîtes</li>
+                </a>
+                <a href="gite2p1.html">
+                  <li>Babe</li>
+                </a>
+                <a href="gite2p2.html">
+                  <li>Garfield</li>
+                </a>
+                <a href="gite2p3.html">
+                  <li>Idéfix</li>
+                </a>
+                <a href="gite4p1.html">
+                  <li>Jolly Jumper</li>
+                </a>
+                <a href="gite4p2.html">
+                  <li>Saturnin</li>
+                </a>
+                <a href="gite6p.html">
+                  <li class="wg-noBorder">Tornado</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card menuF2">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              Nos Activités
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <a href="accrobranche.html">
+                  <li>Accrobranche</li>
+                </a>
+                <a href="escalade.html">
+                  <li>Escalade</li>
+                </a>
+                <a href="ferme.html">
+                  <li>Ferme pédagogique</li>
+                </a>
+                <a href="pedalo.html">
+                  <li class="wg-noBorder">Pédalo</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class=" wg-creditCard row">
+          <div class=" containerI col-12 col-md-3 text-center">
+            <i class="fab fa-cc-paypal fa-2x"></i>
+            <i class="fab fa-cc-visa fa-2x"></i>
+            <i class="fab fa-cc-amex fa-2x"></i>
+            <i class="fab fa-cc-mastercard fa-2x"></i>
+          </div>
+          <div class="col-4 col-md-3">
+            <p><a href="mentions.html">Mentions Légales</a><br>
+              <a onclick="openModal()" href="#">Newsletter</a></p>
+          </div>
+          <div class="col-4 col-md-3">
+            <p>Copyright 2018</p>
+          </div>
+          <div class="col-4 col-md-3">
+            <i class=" wg-facebook fab fa-facebook-square fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12" id="modal">
+        <form>
+          <h1>Newsletter</h1>
+          <div class="wg-info">
+            <div>
+              <input type="radio" id="scales" name="feature" value="oui" />
+              <label for="scales">Oui</label>
+            </div>
+            <div>
+              <input type="radio" id="scales" name="feature" value="non" checked />
+              <label for="scales">Non</label>
+            </div>
+            <input id="inputName" type="text" placeholder="Nom">
+            <input id="inputMail" type="email" placeholder="Adresse mail">
+          </div>
+          <input onclick="closeModal()" type="submit" value="Envoyez">
+          <button id="close" onclick="closeModal()">X</button>
+        </form>
+      </div>
+    </div>
+</footer>
 
 
   <!-- Optional JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="./../assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./../assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
+<script src="./../assets/js/nav.js"></script>
 </body>
 
 </html>
