@@ -100,7 +100,6 @@ nav ul li {
   position: relative;
 }
 nav ul li i {
-  line-height: auto;
   margin-left: 0.25rem;
 }
 nav ul li ul {
@@ -124,6 +123,213 @@ nav ul li a {
   display: block;
   border-radius: 0.3rem;
 }
+
+.text-muted {
+  color: #0286E7 !important;
+  /* #14bc03 */
+}
+.mentions-container{
+  padding:25px !important;
+
+
+}
+.mentions-container h1{
+  font-size:2em;
+  width:100%;
+  text-align: center;
+}
+.mentions-container h2, .mentions-container h3{
+  text-align: left;
+  font-weight: bold;
+}
+.mentions-container h2{
+  font-size:1.3em;
+}
+
+/****** CSS WILLY ******/
+/****** FOOTER ******/
+footer{
+  background:#404746;
+  width : 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+footer i {
+  color: #eee;
+}
+.wg-creditCard {
+  margin-top: 10px;
+}
+.wg-creditCard div p {
+  font-size: 13px;
+  color: white;
+}
+.wg-creditCard div p a {
+  color: white;
+}
+.menuF a {
+  color: black;
+  display: block;
+  width: 100%;
+}
+.menuF2 a {
+  color: black;
+  display: block;
+  width: 100%;
+}
+.card-body {
+  padding: 0;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin-left: 10px;
+}
+footer ul a  {
+  border-bottom: 1px solid #0286E7;
+}
+footer ul a:hover {
+  border-bottom: 1px solid #14bc03;
+  font-size: 20px;
+}
+.containerI {
+  margin-bottom: 5px;
+}
+footer form p {
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #555;
+  font-style: italic;
+  font-size: 14px;
+}
+
+footer form {
+  width: 428px;
+  margin:  auto;
+  padding: 50px;
+}
+
+#modal input {
+  font-family: 'PT Sans Narrow';
+  font-size: 20px;
+}
+
+.wg-info {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.wg-info input {
+  display: block;
+  width: 300px;
+  height: 20px;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 0 10px 0;
+  padding: 12px 10px;
+  background: #fff;
+}
+.wg-info input {
+  display: block;
+  width: 300px;
+  height: 20px;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 0 10px 0;
+  padding: 12px 10px;
+  background: #fff;
+}
+
+.wg-info input[type=radio] {
+  display: block;
+  width: 50px;
+  color: white;
+
+}
+
+.wg-info input:last-child {
+  margin: 0;
+}
+
+.wg-info input:focus {
+  background: #eee;
+  outline: none;
+}
+
+#modal input[type="submit"] {
+  vertical-align: top;
+  height: 33px;
+  width: 96px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: #14bc03;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 30px;
+}
+#modal input[type="submit"]:hover {
+  background-color: #0286E7;
+}
+#modal {
+  display: none;
+  width: 500px;
+  background-color: #F7F7F7;
+  color: black;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  border: 4px solid #0286E7;
+}
+#close {
+      position: absolute;
+      top: 5px;
+      right: 5px
+}
+
+/****** END-CSS WILLY ******/
+/****** END-FOOTER ******/
+.text-muted{
+  color:#0286E7 !important; /* #14bc03 */
+}
+.mentions-container h3{
+  font-size:1.2em;
+}
+.mentions-container pre{
+  width:100%;
+}
+.mentions-container p{
+  color:#333;
+}
+
+.mentions-container {
+  padding: 25px !important;
+
+
+}
+
+.mentions-container h1 {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.mentions-container h2 {
+  font-size: 1.3em;
+}
+
+.mentions-container h3 {
+  font-size: 1.2em;
+}
+
+.mentions-container pre {
+  width: 100%;
+}
 nav ul li a:hover,
 nav ul li a .active {
   color: #333;
@@ -134,15 +340,98 @@ nav ul li a .active {
   position: absolute;
   background: #333;
   color: #fff;
-  top: 0.5rem;
+  top: .5rem;
   right: 1rem;
   width: 45px;
   line-height: 45px;
   text-align: center;
   font-size: 2rem;
   cursor: pointer;
-  border-radius: 0.3rem;
+  border-radius: .3rem;
   display: none;
+}
+
+/****** Smartphones M ******/
+@media (max-width: 375px) {
+  .gite-tarif-title span.gite-title{
+    font-size:1em;
+  }
+  .pricing-table td{
+    font-size:.9em;
+  }
+  .btn-accueil-gites a{
+    font-size: 1.2em;
+  }
+  .activite-inside-element{
+    position: relative;
+  }
+  #modal {
+    display: none;
+    width: 500px;
+    background-color: rgb(139, 139, 139);
+    color: rgb(206, 206, 206);
+    position: fixed;
+    left: 0;
+    top: 100px;
+  }
+
+  .activite-element span {
+    font-size: .9em;
+    line-height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wg-creditCard div p  {
+    text-align: center;
+  }
+  footer .wg-creditCard i {
+    font-size: 40px;
+  }
+}
+
+/****** Large devices (desktops, 992px and up) ******/
+@media (min-width: 992px) {
+
+/****** Smartphones L ******/
+@media (max-width: 425px) {
+  section#main {
+    padding: 5px;
+    width: 100%;
+  }
+
+  section#main .container {
+    width: 100%;
+    /*min-height:550px;*/
+  }
+  section#main .container h1{
+    font-size:2em;
+    text-align: left;
+  }
+  .table-responsive{
+    font-size:.9em;
+  }
+  .gite-element-head{
+    line-height:20px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .btn-accueil-gites a i{
+    opacity: 1;
+    position : relative;
+    background: #fff;
+    color:#7d8c9b;
+    height:var(--hauteur-bouton);
+    line-height: var(--hauteur-bouton);
+    padding : 0 7px;
+    float:right;
+  }
 }
 
 @media (max-width: 767px) {
@@ -266,9 +555,16 @@ nav ul li a .active {
   #gitePage .card h2 {
     margin-bottom: 1rem;
   }
+
+  footer{
+    background:#404746;
+    width : 100%;
+  }
+  #modal {
+    left: 30%;
+  }
+
   #gitePage .card_small {
     height: 650px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
