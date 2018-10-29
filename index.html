@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./assets/vendor/bootstrap_min/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -18,36 +18,34 @@
 
 <body>
 
-  <header id="home" class="container-fluid">
-    <img src="./assets/img/logoLacVert.png" class="header_logo" alt="logo le lac vert">
-    <nav class="container">
-      <div class="link">
-        <a href="#home">Accueil</a>
-      </div>
-      <div class="link">
-        <a href="">Activit&eacute;s</a>
-        <div class="nav_up">
-          <a href="./pages/activite-accrobranche.html"><i class="fas fa-chevron-right"></i>Accrobranche</a>
-          <a href="./pages/activite-escalade.html"><i class="fas fa-chevron-right"></i>Escalade</a>
-          <a href="./pages/activite-ferme-pedagogique.html"><i class="fas fa-chevron-right"></i>Ferme pédagogique</a>
-          <a href="./pages/activite-pedalo.html"><i class="fas fa-chevron-right"></i>Pédalo</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="./pages/gitePage.html">G&icirc;tes</a>
-        <div class="nav_up">
-          <a href="./pages/gite-babe.html"><i class="fas fa-chevron-right"></i>babe</a>
-          <a href="./pages/gite-garfield.html"><i class="fas fa-chevron-right"></i>Garfield</a>
-          <a href="./pages/gite-idefix.html"><i class="fas fa-chevron-right"></i>Idéfix</a>
-          <a href="./pages/gite-jolly-jumper.html"><i class="fas fa-chevron-right"></i>Jolly Jumper</a>
-          <a href="./pages/gite-saturnin.html"><i class="fas fa-chevron-right"></i>Saturnin</a>
-          <a href="./pages/gite-tornado.html"><i class="fas fa-chevron-right"></i>Tornado</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="./pages/tarifs.html">Tarifs</a>
-      </div>
+  <header>
+    <div class="logo"><img src="./assets/img/logoLacVert.png" alt="logoLacVert"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#" class="sub-menu">Activité<i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="./pages/accrobranche.html">Accrobranche</a></li>
+            <li><a href="./pages/escalade.html">Escalade</a></li>
+            <li><a href="./pages/ferme.html">Ferme pédagogique</a></li>
+            <li><a href="./pages/pedalo.html">Pédalo</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="sub-menu">Gîtes<i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="./pages/gitePage.html">Tous les gîtes</a></li>
+            <li><a href="./pages/gite2p3.html">Babe</a></li>
+            <li><a href="./pages/gite2p2.html">Garfield</a></li>
+            <li><a href="./pages/gite2p1.html">Idéfix</a></li>
+            <li><a href="./pages/gite4p1.html">Saturnin</a></li>
+            <li><a href="./pages/gite4p2.html">Jolly Jumper</a></li>
+            <li><a href="./pages/gite6p.html">Tornado</a></li>
+          </ul>
+        </li>
+        <li><a href="./pages/tarifs.html">Tarifs</a></li>
+      </ul>
     </nav>
+    <div id="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
   </header>
   <section id="main">
     <div class="container">
@@ -117,12 +115,9 @@
 
 
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="./assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
+  <script src="./assets/js/nav.js"></script>
 
 </body>
 

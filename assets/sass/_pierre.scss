@@ -1,0 +1,107 @@
+/********* Page description Gite ***********/
+
+.pg-xy-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pg-transition {
+  transition: all 350ms ease-in-out;
+}
+
+.pg-r-3-2 {
+  width: 100%;
+  padding-bottom: 66.667%;
+  /* background-color: #ddd;*/
+}
+
+.pg-image-holder {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Styles principale */
+.pg-galerie-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 2px ridge #CCC
+}
+
+.pg-galerie {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.pg-objet-wrap {
+  cursor: pointer;
+  width: 23%;
+  /* valueur arbitraire */
+  display: inline-block;
+  /*background-color: white;*/
+}
+
+.pg-objet-wrap figure {
+  margin: 0 0 0;
+}
+
+.pg-galerie-objet {
+  opacity: 0.5;
+}
+
+.pg-galerie-objet.pg-active {
+  opacity: 1;
+}
+
+.pg-controle {
+  font-size: 0;
+  border-top: none;
+}
+
+.pg-move-btn {
+  display: inline-block;
+  width: 50%;
+  border: none;
+  color: #ccc;
+  background-color: transparent;
+  padding: 0em 1.5em;
+  color: red;
+  font-size: x-large;
+}
+
+.pg-move-btn:first-child {
+  border-right: none;
+}
+
+.pg-move-btn.pg-left {
+  cursor: w-resize;
+}
+
+.pg-move-btn.pg-right {
+  cursor: e-resize;
+}
+
+/****** Desciption ******/
+.pg-detail {
+  border: 1px solid black;
+}
+
+.pg-detail-p {
+  margin-bottom: 0;
+  margin-left: 3%;
+}
+
+.pg-detail-hr {
+  height: 1px;
+  color: black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pg-detail-p2 {
+  width: 95%;
+  margin: 0 auto;
+}
