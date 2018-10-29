@@ -60,145 +60,105 @@ h1, h2 {
   }
 }
 header {
-  position: relative;
   display: flex;
   align-items: flex-end;
-  background: url("./../img/banner2.jpg") center no-repeat;
-  background-size: cover;
-  height: 150px;
+  justify-content: center;
+  padding: 0 100px;
+  width: 100%;
+  box-sizing: border-box;
+  background: url("./../img/banner2.jpg") no-repeat center;
 }
-header .header_logo {
-  width: 100px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
+header .logo img {
+  height: 100px;
+  float: left;
 }
 
 nav {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-end;
-  line-height: 3rem;
-  background: rgba(255, 255, 255, 0.3);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  justify-content: space-around;
 }
-nav .link {
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li.active ul {
   position: relative;
-  margin: auto 1rem;
+  display: block;
+  opacity: 1;
+  background: greenyellow;
+  width: max-content;
 }
-nav .link a {
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+nav ul li i {
+  line-height: auto;
+  margin-left: 0.25rem;
+}
+nav ul li ul {
+  position: absolute;
+  display: block;
+  background: greenyellow;
+  width: max-content;
+  transition: 0.75s linear;
+  opacity: 0;
+}
+nav ul li ul li {
+  width: 100%;
+}
+nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: orangered;
   text-decoration: none;
+  display: block;
+}
+nav ul li a:hover,
+nav ul li a .active {
   color: #333;
-  font-size: 1rem;
+  background: red;
 }
-nav .link a:hover {
-  color: #000;
-}
-nav .link .link_click {
+
+#menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 2rem;
   cursor: pointer;
-}
-nav .link .link_click:hover {
-  color: #000;
-}
-nav .link .nav_up {
   display: none;
 }
-nav .link .nav_down {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-nav .link .nav_down a {
-  background: #A5D0B6;
-  color: #333;
-  text-decoration: none;
-  line-height: 3rem;
-  border-bottom: 1px solid #808285;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-nav .link .nav_down a i {
-  margin: auto 0.25rem;
-  font-size: 1rem;
-}
-nav .link .nav_down a:hover {
-  background: #333;
-  color: #A5D0B6;
-}
 
-@media (min-width: 768px) {
-  header .header_logo {
-    width: 150px;
-  }
-
-  nav .link {
-    margin: auto 1.25rem;
-  }
-  nav .link a {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 992px) {
+@media (max-width: 991px) {
   header {
-    height: 175px;
-  }
-  header .header_logo {
-    width: 175px;
+    padding: 0 2rem;
   }
 
-  nav .link {
-    margin: auto 1.35rem;
-  }
-  nav .link a {
-    font-size: 1.35rem;
-  }
-}
-@media (min-width: 1200px) {
-  header {
-    height: 175px;
-  }
-  header .header_logo {
-    width: 225px;
-  }
-
-  nav .link {
-    margin: auto 1.5rem;
-  }
-  nav .link a {
-    font-size: 1.5rem;
-  }
-  nav .link .nav_up {
-    position: relative;
-  }
-  nav .link .nav_down {
+  nav {
     position: absolute;
-    top: 195px;
-    left: -50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 15rem;
-    transition: top 1s ease-in;
-  }
-  nav .link .nav_down a {
-    width: auto;
-    text-decoration: none;
-    line-height: 2.5rem;
-    background: #A5D0B6;
-    border-bottom: 1px solid #808285;
-  }
-  nav .link .nav_down a i {
-    margin: auto 0.75rem;
-    font-size: 1rem;
-  }
-  nav .link .nav_down a:hover {
+    width: 100%;
+    height: calc(100vh - 50px);
     background: #333;
-    color: #A5D0B6;
+    top: 50px;
+    left: -100%;
+    transition: 0.75s ease-in;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  nav.active {
+    left: 0;
   }
 }
 section#main {
@@ -391,7 +351,6 @@ section#main .container section.activities-container h2 {
   margin-bottom: 1rem;
   width: 100%;
   border-radius: 0.3rem;
-  background-color: black;
 }
 #gitePage .jumbotron .button_banner {
   display: none;

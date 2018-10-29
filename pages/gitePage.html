@@ -18,37 +18,33 @@
 
 <body>
 
-  <header id="home" class="container-fluid">
-    <img src="./../assets/img/logoLacVert.png" class="header_logo" alt="logo le lac vert">
-    <nav class="container">
-      <div class="link">
-        <a href="../index.html" class="link_click">Accueil</a>
-      </div>
-      <div class="link">
-        <a class="link_click">Activit&eacute;s</a>
-        <div class="nav_up">
-          <a href="activite-accrobranche.html"><i class="fas fa-chevron-right"></i>Accrobranche</a>
-          <a href="activite-escalade.html"><i class="fas fa-chevron-right"></i>Escalade</a>
-          <a href="activite-ferme-pedagogique.html"><i class="fas fa-chevron-right"></i>Ferme pédagogique</a>
-          <a href="activite-pedalo.html"><i class="fas fa-chevron-right"></i>Pédalo</a>
-        </div>
-      </div>
-      <div class="link">
-        <a class="link_click">G&icirc;tes</a>
-        <div class="nav_up">
-          <a href="gitePage.html"><i class="fas fa-chevron-right"></i>Nos gîtes</a>
-          <a href="gite2p1.html"><i class="fas fa-chevron-right"></i>babe</a>
-          <a href="gite-garfiels.html"><i class="fas fa-chevron-right"></i>Garfield</a>
-          <a href="gite-idefix.html"><i class="fas fa-chevron-right"></i>Idéfix</a>
-          <a href="gite-jolly-jumper.html"><i class="fas fa-chevron-right"></i>Jolly Jumper</a>
-          <a href="gite-saturnin.html"><i class="fas fa-chevron-right"></i>Saturnin</a>
-          <a href="gite-tornado.html"><i class="fas fa-chevron-right"></i>Tornado</a>
-        </div>
-      </div>
-      <div class="link">
-        <a href="tarifs.html" class="link_click">Tarifs</a>
-      </div>
+  <header>
+    <div class="logo"><img src="./../assets/img/logoLacVert.png" alt="logoLacVert"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#" class="sub-menu">Activité<i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="">Accrobranche</a></li>
+            <li><a href="">Escalade</a></li>
+            <li><a href="">Ferme pédagogique</a></li>
+            <li><a href="">Pédalo</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="sub-menu">Gîtes<i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="">Babe</a></li>
+            <li><a href="">Garfield</a></li>
+            <li><a href="">Idéfix</a></li>
+            <li><a href="">Saturnin</a></li>
+            <li><a href="">Jolly Jumper</a></li>
+            <li><a href="">Tornado</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Tarifs</a></li>
+      </ul>
     </nav>
+    <div id="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
   </header>
 
   <h1>Nos Gîtes</h1>
@@ -238,8 +234,7 @@
   </div>
 
   <!-- Optional JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="./../assets/vendor/bootstrap_min/js/bootstrap.min.js"></script>
   <script src="./../assets/js/nav.js"></script>
 </body>
